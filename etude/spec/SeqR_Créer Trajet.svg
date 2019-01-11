@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1164 1365" style="enable-background:new 0 0 1164 1365;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:13px;}
+	.st4{font-family:'Arial-BoldMT';}
+	.st5{opacity:0.2;fill:#C0C0C0;enable-background:new    ;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;}
+</style>
+<g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M16,0h1144v1344H16V0"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M16,0v22h184.6l11-11V0H16"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M16,0v22h184.6l11-11V0H16L16,0"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 86.979 17.5)" class="st2 st3">SeqR_Créer Trajet</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 21 17.5)" class="st4 st3">interaction</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="175" y="47" class="st5" width="71.7" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="168" y="40" class="st1" width="71.7" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M168,40h71.7v39H168V40z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 190.1477 59.5)" class="st4 st3">:IHM</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M204.5,80v1265"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="479" y="47" class="st5" width="89.8" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="472" y="40" class="st1" width="89.8" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M472,40h89.8v39H472V40z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 484.731 59.5)" class="st4 st3">:Contrôleur</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M517.5,80v1265"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M152,360h336v96H152V360"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M152,360v22h146.8l11-11v-11H152"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M152,360v22h146.8l11-11v-11H152L152,360"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 187.5781 377.5)" class="st2 st3">[nonFinCatalogue]</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 157 377.5)" class="st4 st3">loop</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="727" y="107" class="st5" width="168.5" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="720" y="100" class="st1" width="168.5" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M720,100h168.5v39H720V100z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 736.3364 119.5)" class="st4 st3">:ServiceAuthentification</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M805.5,140v1204"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M864,584h173l10,10v39H864V584"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M864,584h173l10,10v39H864V584L864,584"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M1037,584v10h10L1037,584"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 869 602)" class="st2 st3">Demande au backend de</text>
+			<text transform="matrix(1 0 0 1 869 615)" class="st2 st3">retourner la liste des</text>
+			<text transform="matrix(1 0 0 1 869 628)" class="st2 st3">itinéraires de l&apos;utilisateur</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M863,589h-22v-2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M32,752h576v80H32V752"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M32,752v22h148.2l11-11v-11H32"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M32,752v22h148.2l11-11v-11H32L32,752"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 67.5781 769.5)" class="st2 st3">parcoursItineraires</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 37 769.5)" class="st4 st3">loop</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 51.5 802.5)" class="st2 st3">[nonFin]</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="671" y="867" class="st5" width="78.2" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="664" y="860" class="st1" width="78.2" height="39"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M664,860h78.2v39H664V860z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 676.0264 879.5)" class="st4 st3">:Itineraire</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M704.5,900v444"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M32,1256h576v80H32V1256"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M32,1256v22h149.7l11-11v-11H32"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M32,1256v22h149.7l11-11v-11H32L32,1256"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 67.5781 1273.5)" class="st2 st3">ParcoursItineraires</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 37 1273.5)" class="st4 st3">loop</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 51.5 1306.5)" class="st2 st3">[nonFin]</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st1" d="M864,1176h277l10,10v65H864V1176"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M864,1176h277l10,10v65H864V1176L864,1176"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M1141,1176v10h10L1141,1176"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 869 1194)" class="st2 st3">Demande au backend de rajouter le trajet à un</text>
+			<text transform="matrix(1 0 0 1 869 1207)" class="st2 st3">itineraire existant de l&apos;utilisateur s&apos;il en existe un</text>
+			<text transform="matrix(1 0 0 1 869 1220)" class="st2 st3">qui correspond, sinon de créer un nouvel</text>
+			<text transform="matrix(1 0 0 1 869 1233)" class="st2 st3">itinéraire et de lui ajouter le trajet</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M841,1178v6h23"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M517,120h203"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M709.8,124.2L720,120l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 608.5 116.5)" class="st2 st3">1 :</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 592.5 101.5)" class="st2 st3">«create»</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,216h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,220.2L510,216l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,220.2L510,216l-10.2-4.2V220.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 249.0786 212.5)" class="st2 st3">2 : chargerTrajetsPassagerParDefaut</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="216" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,216h13v28h-13V216z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,288H210"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,283.8L210,288l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,283.8L210,288l10.2,4.2V283.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 222.5 304.5)" class="st2 st3">3 : afficherTrajetsPassagerParDefaut(catalogue)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="288" class="st1" width="13" height="58"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,288h13v58h-13V288z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,392h30v20h-24"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,407.8L210,412l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,407.8L210,412l10.2,4.2V407.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 245.5 412.5)" class="st2 st3">4 : afficherTrajet(trajet)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="412" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,412h13v28h-13V412z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,488h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,492.2L510,488l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,492.2L510,488l-10.2-4.2V492.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 269.5 484.5)" class="st2 st3">5 : clicOngletConducteur(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="488" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,488h13v28h-13V488z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="520" y="480" class="st1" width="344" height="49"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M520,480h344v49H520V480z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M520,480v22h25.2l11-11v-11H520L520,480"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 600.5938 511)" class="st2 st3">ConnexionUtilisateur: utilisateur</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 525 497.5)" class="st2 st3">ref</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,565h281"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M787.8,569.2L798,565l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M787.8,569.2L798,565l-10.2-4.2V569.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 531.5 561.5)" class="st2 st3">6 : chargerItinerairesConducteur(utilisateur)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="798" y="565" class="st1" width="13" height="62"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M798,565h13v62h-13V565z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M811,576h30v20h-23"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M828.2,591.8L818,596l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M828.2,591.8L818,596l10.2,4.2V591.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 846.5 572.5)" class="st2 st3">7 : recupererItinerairesConducteur(utilisateur)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="805" y="596" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M805,596h13v28h-13V596z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="520" y="216" class="st1" width="216" height="49"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M520,216h216v49H520V216z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M520,216v22h25.2l11-11v-11H520L520,216"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 556.3477 247)" class="st2 st3">ConsulterTrajetPassager</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 525 233.5)" class="st2 st3">ref</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M805,608H517"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M527.2,603.8L517,608l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 610.5 624.5)" class="st2 st3">8 : listeItineraires</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,632h30v20h-24"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M533.2,647.8L523,652l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M533.2,647.8L523,652l10.2,4.2V647.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 535.115 676.5)" class="st2 st3">9 : setItinerairesUtilisateur(listeItineraires)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="652" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,652h13v28h-13V652z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,680H210"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,675.8L210,680l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,675.8L210,680l10.2,4.2V675.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 255.5 696.5)" class="st2 st3">10 : afficherItineraires(listeItineraires)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="680" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,680h13v28h-13V680z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,776h30v20h-24"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,791.8L210,796l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,791.8L210,796l10.2,4.2V791.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 247.5 791.5)" class="st2 st3">11 : afficherItineraire(itineraire)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="796" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,796h13v28h-13V796z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,864h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,868.2L510,864l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,868.2L510,864l-10.2-4.2V868.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 237.5 860.5)" class="st2 st3">12 : deroulerPanneauCreationTrajet(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="864" class="st1" width="13" height="40"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,864h13v40h-13V864z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M523,880h141"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M653.8,884.2L664,880l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 580.5 876.5)" class="st2 st3">13 :</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 567.5 861.5)" class="st2 st3">«create»</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,896H210"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,891.8L210,896l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,891.8L210,896l10.2,4.2V891.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 252.5 912.5)" class="st2 st3">14 : afficherPageCreationTrajet(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="896" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,896h13v28h-13V896z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,952h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,956.2L510,952l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,956.2L510,952l-10.2-4.2V956.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285.5 948.5)" class="st2 st3">15 : saisieDepart(depart)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="952" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,952h13v28h-13V952z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M523,960h174"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M686.8,964.2L697,960l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M686.8,964.2L697,960l-10.2-4.2V964.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 546.5 956.5)" class="st2 st3">16 : setDepart(depart)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="697" y="960" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M697,960h13v28h-13V960z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,1000h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,1004.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,1004.2l10.2-4.2l-10.2-4.2V1004.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 282.5 996.5)" class="st2 st3">17 : saisieArrivee(arrivee)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="1000" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,1000h13v28h-13V1000z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M523,1012h174"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M686.8,1016.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M686.8,1016.2l10.2-4.2l-10.2-4.2V1016.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 543.5 1008.5)" class="st2 st3">18 : setArrivee(arrivee)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="697" y="1012" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M697,1012h13v28h-13V1012z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,1047h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,1051.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,1051.2l10.2-4.2l-10.2-4.2V1051.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 297.5 1043.5)" class="st2 st3">19 : saisieDate(date)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="1047" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,1047h13v28h-13V1047z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M523,1061h174"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M686.8,1065.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M686.8,1065.2l10.2-4.2l-10.2-4.2V1065.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 557.5 1057.5)" class="st2 st3">20 : setDate(date)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="697" y="1061" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M697,1061h13v28h-13V1061z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,1085h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,1089.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,1089.2l10.2-4.2l-10.2-4.2V1089.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 289.5 1081.5)" class="st2 st3">21 : saisieHeure(heure)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="1085" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,1085h13v28h-13V1085z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M523,1101h174"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M686.8,1105.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M686.8,1105.2l10.2-4.2l-10.2-4.2V1105.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 550.4473 1097.5)" class="st2 st3">22 : setHeure(heure)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="697" y="1101" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M697,1101h13v28h-13V1101z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,1127h306"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M499.8,1131.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M499.8,1131.2l10.2-4.2l-10.2-4.2V1131.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 276.5 1123.5)" class="st2 st3">23 : clicBtnCreerTrajet(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="510" y="1127" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M510,1127h13v28h-13V1127z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,1160h281"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M787.8,1164.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M787.8,1164.2l10.2-4.2l-10.2-4.2V1164.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 552.5 1156.5)" class="st2 st3">24 : creerTrajet(utilisateur, itineraire)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="798" y="1160" class="st1" width="13" height="59"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M798,1160h13v59h-13V1160z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M811,1168h30v20h-23"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M828.2,1183.8L818,1188l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M828.2,1183.8L818,1188l10.2,4.2V1183.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 862.5 1164.5)" class="st2 st3">25 : creerTrajet(utilisateur, itineraire)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="805" y="1188" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M805,1188h13v28h-13V1188z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st6" d="M805,1205H517"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M527.2,1200.8L517,1205l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 559.5 1221.5)" class="st2 st3">26 : listeItineraires</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M517,1224H210"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M220.2,1219.8L210,1224l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M220.2,1219.8L210,1224l10.2,4.2V1219.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 255.5 1240.5)" class="st2 st3">27 : afficherItineraires(listeItineraires)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="197" y="1224" class="st1" width="13" height="107"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M197,1224h13v107h-13V1224z"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M210,1280h30v20h-23"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path d="M227.2,1295.8L217,1300l10.2,4.2"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M227.2,1295.8L217,1300l10.2,4.2V1295.8"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 261.5 1300.5)" class="st2 st3">28 : afficherItineraire(itineraire)</text>
+		</g>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<rect x="204" y="1300" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-6,10) scale(1,1)">
+		<path class="st0" d="M204,1300h13v28h-13V1300z"/>
+	</g>
+</g>
+</svg>

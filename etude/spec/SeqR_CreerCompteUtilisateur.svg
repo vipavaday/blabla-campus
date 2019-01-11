@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1100 924" style="enable-background:new 0 0 1100 924;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:13px;}
+	.st4{font-family:'Arial-BoldMT';}
+	.st5{opacity:0.2;fill:#C0C0C0;enable-background:new    ;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;}
+</style>
+<g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M240,0h1080v904H240V0"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st1" d="M240,0v22h251.5l11-11V0H240"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M240,0v22h251.5l11-11V0H240L240,0"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 310.979 17.5)" class="st2 st3">SeqR_CreerCompteUtilisateur</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 245 17.5)" class="st4 st3">interaction</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="303" y="47" class="st5" width="71.7" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="296" y="40" class="st1" width="71.7" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M296,40h71.7v39H296V40z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 318.1477 59.5)" class="st4 st3">:IHM</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M332.5,80v684"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="559" y="47" class="st5" width="89.8" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="552" y="40" class="st1" width="89.8" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M552,40h89.8v39H552V40z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 564.731 59.5)" class="st4 st3">:Controleur</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M597.5,80v806"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="1007" y="47" class="st5" width="168.5" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="1000" y="40" class="st1" width="168.5" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1000,40h168.5v39H1000V40z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 1016.3364 59.5)" class="st4 st3">:ServiceAuthentification</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M1085.5,80v742"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="871" y="108" class="st5" width="152.6" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="864" y="101" class="st1" width="152.6" height="39"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M864,101h152.6v39H864V101z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 879.9905 120.5)" class="st4 st3">utilisateur: Utilisateur</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M941.5,141v591"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st1" d="M1136,760h168.4l10,10v52H1136V760"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1136,760h168.4l10,10v52H1136V760L1136,760"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1304.4,760v10h10L1304.4,760"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 1141 778)" class="st2 st3">Demande au backend de</text>
+			<text transform="matrix(1 0 0 1 1141 791)" class="st2 st3">créer un nouvel utilisateur en</text>
+			<text transform="matrix(1 0 0 1 1141 804)" class="st2 st3">base de donnée</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M1135,768h-14v1"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,107h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,111.2L590,107l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,111.2L590,107l-10.2-4.2V111.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 377.5 103.5)" class="st2 st3">1 : clicBtnCreerCompte(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="107" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,107h13v28h-13V107z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M603,121h261"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M853.8,125.2L864,121l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 723.5 117.5)" class="st2 st3">2 :</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 707.5 102.5)" class="st2 st3">«create»</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,128H338"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M348.2,123.8L338,128l10.2,4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M348.2,123.8L338,128l10.2,4.2V123.8"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 331.5 147.5)" class="st2 st3">3 : afficherPageEtudiantCreationCompte(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="325" y="128" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M325,128h13v28h-13V128z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,192h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,196.2L590,192l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,196.2L590,192l-10.2-4.2V196.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 398.5 187.5)" class="st2 st3">4 : saisieNom(nom)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="192" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,192h13v28h-13V192z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,202h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,206.2L934,202l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,206.2L934,202l-10.2-4.2V206.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 719.5 198.5)" class="st2 st3">5 : setNom(nom)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="202" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,202h13v28h-13V202z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,232h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,236.2L590,232l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,236.2L590,232l-10.2-4.2V236.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 386.5 228.5)" class="st2 st3">6 : saisiePrenom(prenom)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="232" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,232h13v28h-13V232z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,245h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,249.2L934,245l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,249.2L934,245l-10.2-4.2V249.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 701.5 241.5)" class="st2 st3">7 : setPrenom(prenom)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="245" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,245h13v28h-13V245z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,288h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,292.2L590,288l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,292.2L590,288l-10.2-4.2V292.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 403.5 284.5)" class="st2 st3">8 : saisieMail(email)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="288" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,288h13v28h-13V288z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,296h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,300.2L934,296l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,300.2L934,296l-10.2-4.2V300.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 718.5 292.5)" class="st2 st3">9 : setMail(email)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="296" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,296h13v28h-13V296z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,335h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,339.2L590,335l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,339.2L590,335l-10.2-4.2V339.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 402.5 331.5)" class="st2 st3">10 : saisieMdp(mdp)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="335" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,335h13v28h-13V335z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,344h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,348.2L934,344l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,348.2L934,344l-10.2-4.2V348.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 702.5 340.5)" class="st2 st3">11 : setHashMdp(mdp)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="344" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,344h13v28h-13V344z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,378h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,382.2L590,378l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,382.2L590,378l-10.2-4.2V382.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 352.5 374.5)" class="st2 st3">12 : saisieConfirmationMdp(confMdp)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="378" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,378h13v28h-13V378z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,391h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,395.2L934,391l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,395.2L934,391l-10.2-4.2V395.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 652.5 387.5)" class="st2 st3">13 : setHashConfirmationMdp(confMdp)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="391" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,391h13v28h-13V391z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,438h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,442.2L590,438l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,442.2L590,438l-10.2-4.2V442.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 391.5 434.5)" class="st2 st3">14 : clicBtnSuivant(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="438" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,438h13v28h-13V438z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,460H338"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M348.2,455.8L338,460l10.2,4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M348.2,455.8L338,460l10.2,4.2V455.8"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 335.5 483.5)" class="st2 st3">15 : afficherPageEcoleCreationCompte(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="325" y="460" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M325,460h13v28h-13V460z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,522h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,526.2L590,522l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,526.2L590,522l-10.2-4.2V526.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 368.5 518.5)" class="st2 st3">16 : saisieNomEcole(nomEcole)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="522" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,522h13v28h-13V522z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,536h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,540.2L934,536l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,540.2L934,536l-10.2-4.2V540.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 683.5 532.5)" class="st2 st3">17 : setNomEcole(nomEcole)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="536" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,536h13v28h-13V536z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,564h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,568.2L590,564l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,568.2L590,564l-10.2-4.2V568.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 355.5 560.5)" class="st2 st3">18 : saisieNumeroVoieEcole(noVoie)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="564" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,564h13v28h-13V564z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,576h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,580.2L934,576l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,580.2L934,576l-10.2-4.2V580.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 701.5 572.5)" class="st2 st3">19 : setNoVoie(noVoie)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="576" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,576h13v28h-13V576z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,604h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,608.2L590,604l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,608.2L590,604l-10.2-4.2V608.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 406.5 600.5)" class="st2 st3">20 : saisieRue(rue)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="604" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,604h13v28h-13V604z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,616h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,620.2L934,616l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,620.2L934,616l-10.2-4.2V620.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 721.5 612.5)" class="st2 st3">21 : setRue(rue)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="616" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,616h13v28h-13V616z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,645h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,649.2L590,645l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,649.2L590,645l-10.2-4.2V649.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 361.5 641.5)" class="st2 st3">22 : saisieCodePostal(codePostal)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="645" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,645h13v28h-13V645z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,656h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,660.2L934,656l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,660.2L934,656l-10.2-4.2V660.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 676.5 652.5)" class="st2 st3">23 : setCodePostal(codePostal)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="656" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,656h13v28h-13V656z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,677h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,681.2L590,677l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,681.2L590,677l-10.2-4.2V681.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 404.5 673.5)" class="st2 st3">24 : saisieVille(ville)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="677" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,677h13v28h-13V677z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,690h331"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M923.8,694.2L934,690l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M923.8,694.2L934,690l-10.2-4.2V694.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 718.5 686.5)" class="st2 st3">25 : setVille(ville)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="934" y="690" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M934,690h13v28h-13V690z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M332,719h258"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M579.8,723.2L590,719l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M579.8,723.2L590,719l-10.2-4.2V723.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 373.5 715.5)" class="st2 st3">26 : clicBtnCreerCompte(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="719" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,719h13v28h-13V719z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M603,744h475"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M1067.8,748.2l10.2-4.2l-10.2-4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1067.8,748.2l10.2-4.2l-10.2-4.2V748.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 728.5 740.5)" class="st2 st3">27 : creerCompteUtilisateur(utilisateur)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="1078" y="744" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1078,744h13v28h-13V744z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1091,760h30v20h-30"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M1101.2,775.8L1091,780l10.2,4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1101.2,775.8L1091,780l10.2,4.2V775.8"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 1125.5 748.5)" class="st2 st3">28 : creerCompte(utilisateur)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="1078" y="780" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M1078,780h13v28h-13V780z"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st6" d="M1078,792H597"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M607.2,787.8L597,792l10.2,4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 795.5 808.5)" class="st2 st3">29 : utilisateur</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M597,824h30v20h-24"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path d="M613.2,839.8L603,844l10.2,4.2"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M613.2,839.8L603,844l10.2,4.2V839.8"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<g>
+			<path class="st0" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 638.5 836.5)" class="st2 st3">30 : retourPagePrecedente(void)</text>
+		</g>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<rect x="590" y="844" class="st1" width="13" height="28"/>
+	</g>
+	<g transform="translate(-230,10) scale(1,1)">
+		<path class="st0" d="M590,844h13v28h-13V844z"/>
+	</g>
+</g>
+</svg>
