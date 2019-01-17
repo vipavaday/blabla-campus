@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBorderActivity">#0000e6</color>
+    <color name="blablaCampuspurple">#26132E</color>
+    <color name="blablaCampusWhite">#FFFFFF</color>
+</resources>
