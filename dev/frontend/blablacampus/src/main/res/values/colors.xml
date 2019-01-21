@@ -5,5 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorBorderActivity">#0000e6</color>
     <color name="blablaCampuspurple">#26132E</color>
+    <color name="blablaCampusPurpleClear">#3c1e48</color>
     <color name="blablaCampusWhite">#FFFFFF</color>
 </resources>
