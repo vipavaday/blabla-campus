@@ -1,5 +1,6 @@
 package com.example.cedriclingom.blablacampus;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
         // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
+
+    }
+
+
+   public  void afficherTrajet(View view) {
+
+        Intent intent = new Intent(this, Authentification.class);
+        startActivity(intent);
+        System.out.println("Affichage trajet");
 
     }
 

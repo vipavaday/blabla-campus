@@ -17,22 +17,30 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
         <activity
             android:name=".Authentification"
             android:label="Authentification"
             android:theme="@style/AppTheme.NoActionBar">
 
+
+
         </activity>
         <activity
-            android:name=".registration"
+            android:name=".Registration_viewpager"
             android:label="Registration"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

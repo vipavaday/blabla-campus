@@ -3,4 +3,8 @@
     <string name="app_sub_name1">Blabla</string>
     <string name="app_sub_name2">Campus</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_registration">Inscription</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
