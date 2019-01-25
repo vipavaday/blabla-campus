@@ -131,6 +131,7 @@
             </FrameLayout>
 
             <Button
+                android:id="@+id/nextButton_registration"
                 android:layout_width="@dimen/margin_205"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_25"

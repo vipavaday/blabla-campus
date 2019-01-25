@@ -155,7 +155,7 @@
                 android:background="@drawable/bordersmbtnrounded"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="@dimen/margin_16"
-                android:onClick="afficherTrajet"/>
+                android:onClick="showPathGraphicInterface"/>
 
         </FrameLayout>
 

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class Registration_viewpager extends AppCompatActivity {
+public class RegistrationViewpager extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

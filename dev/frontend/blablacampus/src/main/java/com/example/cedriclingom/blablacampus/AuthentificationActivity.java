@@ -1,12 +1,14 @@
 package com.example.cedriclingom.blablacampus;
 
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class Authentification extends AppCompatActivity {
+public class AuthentificationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +26,30 @@ public class Authentification extends AppCompatActivity {
 
         // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
+    }
+
+
+    /**
+     * Montre l'interface d'inscription.
+     * @param view Une vue {View}.
+     */
+    public void showRegistrationGraphicInterface(View view){
+
+        Intent intent = new Intent(this, RegistrationViewpager.class);
+
+        startActivity(intent);
+
+    }
+
+    /**
+     * Montre l'interface de renvoie d'un nouveau.
+     * @param view Une vue {View}.
+     */
+    public void showPwdForgottenGraphicInterface(View view){
+
+        Intent intent = new Intent(this, PwdForgottenActivity.class);
+
+        startActivity(intent);
+
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cedriclingom.blablacampus.Authentification">
+    tools:context="com.example.cedriclingom.blablacampus.AuthentificationActivity">
 
 
 
@@ -131,6 +131,7 @@
                                 android:text="cliquez ici"
                                 android:textColor="@color/blablaCampuspurple"
                                 android:fontFamily="@font/roboto_regular"
+                                android:onClick="showPwdForgottenGraphicInterface"
                                 android:textSize="@dimen/margin_12"/>
 
                         </LinearLayout>
@@ -161,6 +162,7 @@
                         android:layout_marginTop="@dimen/margin_10"
                         android:text="Inscrivez-vous"
                         android:layout_gravity="center"
+                        android:onClick="showRegistrationGraphicInterface"
                         style="@style/registerButton"/>
 
             </LinearLayout>
