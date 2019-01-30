@@ -8,18 +8,17 @@
 
 
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingHorizontal="@dimen/margin_10">
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:paddingVertical="@dimen/margin_30">
 
         <LinearLayout
+            android:id="@+id/auth_linearlayout_blablacampus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="@dimen/margin_30">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
@@ -37,140 +36,140 @@
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/auth_linearlayout_blablacampus"
+            android:paddingTop="@dimen/margin_15"
+            android:background="@drawable/border_purple_radius_5">
 
-
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/connexion_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connexion"
+                    android:layout_alignParentLeft="true"
+                    style="@style/connexionText"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cancel_mdpi"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/connexion_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/connexion_textview"
                 android:orientation="vertical"
-                android:background="@drawable/border_purple_radius_5"
-                android:layout_marginTop="@dimen/margin_30">
+                android:paddingVertical="@dimen/size_20"
+                android:paddingHorizontal="@dimen/margin_40">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:inputType="textEmailAddress"
+                    android:hint="Pseudo"
+                    style="@style/connexionInput"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:inputType="textPassword"
+                        android:hint="Mot de passe"
+                        style="@style/connexionInput"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/password_eye_ldpi"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/margin_10"/>
+
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_marginTop="@dimen/margin_10">
 
-                    <GridLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:rowCount="1"
-                        android:columnCount="2"
-                        android:padding="@dimen/margin_15">
+                        android:text="Mot de passe oublié,  "
+                        android:textColor="@color/blablaCampuspurple"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/margin_12"/>
 
-                        <TextView
-                            android:layout_row="0"
-                            android:layout_column="0"
-                            android:text="Connexion"
-                            android:layout_gravity="center_vertical"
-                            style="@style/connexionText"/>
-
-                        <ImageView
-                            android:layout_row="0"
-                            android:layout_column="1"
-                            android:src="@drawable/cancel_mdpi"
-                            android:layout_gravity="right"/>
-
-                    </GridLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginTop="@dimen/margin_10"
-                        android:paddingVertical="@dimen/margin_10"
-                        android:paddingHorizontal="@dimen/margin_30">
+                        android:text="cliquez ici"
+                        android:textColor="@color/blablaCampuspurple"
+                        android:fontFamily="@font/roboto_regular"
+                        android:onClick="showPwdForgottenGraphicInterface"
+                        android:textSize="@dimen/margin_12"/>
 
-
-                        <EditText
-                            android:layout_width="@dimen/margin_270"
-                            android:layout_height="@dimen/margin_40"
-                            android:inputType="textEmailAddress"
-                            android:hint="Pseudo"
-                            style="@style/connexionInput"/>
-
-
-
-                        <FrameLayout
-                            android:layout_width="@dimen/margin_270"
-                            android:layout_height="@dimen/margin_40"
-                            android:layout_marginTop="@dimen/margin_10">
-
-                            <EditText
-                                android:layout_width="@dimen/margin_270"
-                                android:layout_height="@dimen/margin_40"
-                                android:inputType="textPassword"
-                                android:hint="Mot de passe"
-                                style="@style/connexionInput"/>
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/password_eye_ldpi"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="@dimen/margin_15"
-                                android:layout_marginRight="@dimen/margin_10"/>
-
-                        </FrameLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/margin_270"
-                            android:layout_height="@dimen/margin_40"
-                            android:layout_marginTop="@dimen/margin_10">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mot de passe oublié,  "
-                                android:textColor="@color/blablaCampuspurple"
-                                android:fontFamily="@font/roboto_regular"
-                                android:textSize="@dimen/margin_12"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="cliquez ici"
-                                android:textColor="@color/blablaCampuspurple"
-                                android:fontFamily="@font/roboto_regular"
-                                android:onClick="showPwdForgottenGraphicInterface"
-                                android:textSize="@dimen/margin_12"/>
-
-                        </LinearLayout>
-
-                        <Button
-                            android:layout_width="@dimen/margin_205"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/margin_30"
-                            android:text="Se connecter"
-                            android:layout_gravity="center"
-                            style="@style/seconnecterButton"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/margin_50"
-                            android:text="Pas  encore  inscrit ?"
-                            android:textColor="@color/blablaCampuspurple"
-                            android:fontFamily="@font/roboto_regular"
-                            android:textSize="@dimen/margin_15"
-                            android:layout_gravity="center"/>
-
-                    </LinearLayout>
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_10"
-                        android:text="Inscrivez-vous"
-                        android:layout_gravity="center"
-                        android:onClick="showRegistrationGraphicInterface"
-                        style="@style/registerButton"/>
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/connexion_input"
+                android:paddingTop="@dimen/margin_15">
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="@dimen/margin_205"
+                    android:layout_height="wrap_content"
+                    android:text="Se connecter"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    style="@style/seconnecterButton"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/size_5"
+                    android:text="Pas  encore  inscrit ?"
+                    android:textColor="@color/blablaCampuspurple"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/margin_15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/subscribe_button"/>
+
+                <Button
+                    android:id="@+id/subscribe_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inscrivez-vous"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="showRegistrationGraphicInterface"
+                    style="@style/registerButton"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

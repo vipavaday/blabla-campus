@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,121 +31,139 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_sub_name1"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/margin_205"
-            style="@style/homeText" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_sub_name2"
-            android:layout_gravity="center"
-            style="@style/homeText"/>
+            android:layout_height="match_parent">
 
-        <FrameLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_165">
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/backgroundmenupurple"
-                android:layout_gravity="bottom"
-                android:paddingBottom="@dimen/margin_10">
+                android:layout_height="match_parent">
 
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/imageMargin">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/contacts_mdpi"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Contacts"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="@dimen/margin_83"
-                    style="@style/imageMargin">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/notifications_mdpi"
-                        android:layout_gravity="center"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/relativelayout_bottom_menu">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/home_blabla_text"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Notifications"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/imageMargin">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/accueil_ldpi"
-                        android:layout_gravity="center"/>
+                        android:text="@string/app_sub_name1"
+                        android:layout_centerInParent="true"
+                        style="@style/homeText" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Acceuil"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
+                        android:text="@string/app_sub_name2"
+                        android:layout_below="@+id/home_blabla_text"
+                        style="@style/homeText"/>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_bottom_menu"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/imageMargin">
+                    android:background="@drawable/backgroundmenupurple"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:layout_alignParentBottom="true">
 
-                    <ImageView
+
+                    <LinearLayout
+                        android:id="@+id/image_conatct_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/userinfos_mdpi"
-                        android:layout_gravity="center"/>
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        style="@style/imageMargin">
 
-                    <TextView
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/contacts_mdpi"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contacts"
+                            android:layout_gravity="center"
+                            style="@style/imageText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mes Infos"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/image_conatct_icon"
+                        style="@style/imageMargin">
 
-                </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/notifications_mdpi"
+                            android:layout_gravity="center"/>
 
-            </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Notifications"
+                            android:layout_gravity="center"
+                            style="@style/imageText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/image_personal_infos_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_25"
+                        style="@style/imageMargin">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/userinfos_mdpi"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mes Infos"
+                            android:layout_gravity="center"
+                            style="@style/imageText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@id/image_personal_infos_icon"
+                        style="@style/imageMargin">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/accueil_ldpi"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Acceuil"
+                            android:layout_gravity="center"
+                            style="@style/imageText"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
 
             <ImageView
                 android:id="@+id/menu_trajet"
@@ -153,14 +171,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/trajets_mdpi"
                 android:background="@drawable/bordersmbtnrounded"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="@dimen/margin_16"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/margin_25"
                 android:onClick="showPathGraphicInterface"/>
 
         </FrameLayout>
 
-
-
-    </LinearLayout>
-
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>
