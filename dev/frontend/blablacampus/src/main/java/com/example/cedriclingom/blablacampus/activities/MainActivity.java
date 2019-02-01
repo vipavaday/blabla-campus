@@ -1,19 +1,21 @@
-package com.example.cedriclingom.blablacampus;
+package com.example.cedriclingom.blablacampus.activities;
 
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class RegistrationViewpager extends AppCompatActivity {
+import com.example.cedriclingom.blablacampus.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_viewpager);
-        this.configureViewPager();
+        setContentView(R.layout.activity_main);
 
         Window window = this.getWindow();
 
@@ -26,18 +28,14 @@ public class RegistrationViewpager extends AppCompatActivity {
         // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
 
+    }
+
+
+   public  void showPathGraphicInterface(View view) {
+
+        Intent intent = new Intent(this, PathActivity.class);
+        startActivity(intent);
 
     }
 
-    private void configureViewPager(){
-
-        // 1 - Get ViewPager from layout
-
-        ViewPager pager = (ViewPager)findViewById(R.id.activity_registration_viewpager);
-        //Set Adapter PageAdapter and glue it together
-
-        pager.setAdapter(new RegistrationPageAdapter(getSupportFragmentManager()));
-
-
-    }
 }

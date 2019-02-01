@@ -13,9 +13,22 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppBar">
+        <item name="android:background">@color/blablaCampusWhite</item>
+        <item name="android:textColor">@color/blablaCampuspurple</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+    <!-- Toolbar styles-->
+    <style name="AppBar.toolbar_text_sm_purple_bg_white" parent="AppBar">
+        <item name="android:textSize">@dimen/margin_15</item>
+        <item name="android:paddingLeft">@dimen/size_20</item>
+        <item name="android:paddingRight">@dimen/size_20</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
     <style name="homeText">
         <item name="android:textSize">75dp</item>
         <item name="android:textColor">@color/blablaCampuspurple</item>
@@ -23,6 +36,7 @@
         <item name="android:fontFamily">@font/continuo</item>
         <item name="android:textAlignment">center</item>
     </style>
+
     <style name="AuthBlaBlaCampusText">
         <item name="android:textSize">50dp</item>
         <item name="android:textColor">@color/blablaCampuspurple</item>
@@ -30,6 +44,7 @@
         <item name="android:fontFamily">@font/continuo</item>
         <item name="android:textAlignment">center</item>
     </style>
+
     <style name="imageText">
         <item name="android:textSize">8dp</item>
         <item name="android:textColor">@android:color/white</item>
@@ -37,6 +52,7 @@
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textAlignment">center</item>
     </style>
+
     <style name="connexionText">
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/blablaCampuspurple</item>
@@ -44,11 +60,19 @@
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textAlignment">center</item>
     </style>
+
     <style name="imageMargin">
         <item name="android:layout_marginBottom">1dp</item>
         <item name="android:layout_marginLeft">25dp</item>
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="string_trajets_text">
+        <item name="android:textSize">@dimen/margin_15</item>
+        <item name="android:textColor">@color/blablaCampuspurple</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
 

@@ -6,7 +6,7 @@
     android:paddingHorizontal="@dimen/margin_10"
     android:paddingTop="@dimen/margin_10"
     android:paddingBottom="@dimen/margin_30"
-    tools:context="com.example.cedriclingom.blablacampus.RegistrationPage1Fragment">
+    tools:context="com.example.cedriclingom.blablacampus.fragments.RegistrationPage1Fragment">
 
 
 

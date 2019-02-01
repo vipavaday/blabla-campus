@@ -1,14 +1,12 @@
-package com.example.cedriclingom.blablacampus;
+package com.example.cedriclingom.blablacampus.fragments;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+
+import com.example.cedriclingom.blablacampus.R;
 
 
 /**
@@ -26,6 +24,30 @@ public class RegistrationPage1Fragment extends Fragment {
 
 
     public RegistrationPage1Fragment() {}
+
+
+
+
+
+    /**
+     *
+     * @return Un fragment {RegistrationPage1Fragment}
+     */
+    public static RegistrationPage1Fragment getFragment() {
+        return fragment;
+    }
+
+
+    /**
+     * Met à jour le fragment.
+     * @param fragment Le nouveau fragment {RegistrationPage1Fragment}
+     */
+    public static void setFragment(RegistrationPage1Fragment fragment) {
+        RegistrationPage1Fragment.fragment = fragment;
+    }
+
+
+
 
     /**
      * Use this factory method to create a new instance of

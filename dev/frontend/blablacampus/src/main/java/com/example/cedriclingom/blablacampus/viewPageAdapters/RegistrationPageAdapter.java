@@ -1,8 +1,11 @@
-package com.example.cedriclingom.blablacampus;
+package com.example.cedriclingom.blablacampus.viewPageAdapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.cedriclingom.blablacampus.fragments.RegistrationPage1Fragment;
+import com.example.cedriclingom.blablacampus.fragments.RegistrationPage2Fragment;
 
 /**
  * Created by cedric.lingom on 22/01/2019.
