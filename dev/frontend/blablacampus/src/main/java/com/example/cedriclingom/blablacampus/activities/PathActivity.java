@@ -3,13 +3,16 @@ package com.example.cedriclingom.blablacampus.activities;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.content.res.AppCompatResources;
 import android.view.View;
 
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -66,9 +69,9 @@ public class PathActivity extends AppCompatActivity {
         addTabs(myViewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.path_tabs);
-        //To be continued from here
-        //I have to make a method that manage the tab style and z-index
+        drawTabs();
         tabLayout.setupWithViewPager(myViewPager);
+
 
     }
 
@@ -81,6 +84,89 @@ public class PathActivity extends AppCompatActivity {
     }
 
 
+    private void overlapTabs() {
+
+        findViewById(R.id.passengerItem).bringToFront();
+    }
+
+
+    private void setTabBG(int tab1, int tab2){
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            ViewGroup tabStrip = (ViewGroup) tabLayout.getChildAt(0);
+            View tabView1 = tabStrip.getChildAt(0);
+            View tabView2 = tabStrip.getChildAt(1);
+            if (tabView1 != null) {
+                int paddingStart = tabView1.getPaddingStart();
+                int paddingTop = tabView1.getPaddingTop();
+                int paddingEnd = tabView1.getPaddingEnd();
+                int paddingBottom = tabView1.getPaddingBottom();
+                ViewCompat.setBackground(tabView1, AppCompatResources.getDrawable(tabView1.getContext(), tab1));
+                //ViewCompat.setPaddingRelative(tabView1, paddingStart, paddingTop, paddingEnd, paddingBottom);
+            }
+
+            if (tabView2 != null) {
+                int paddingStart = tabView2.getPaddingStart();
+                int paddingTop = tabView2.getPaddingTop();
+                int paddingEnd = tabView2.getPaddingEnd();
+                int paddingBottom = tabView2.getPaddingBottom();
+                ViewCompat.setBackground(tabView2, AppCompatResources.getDrawable(tabView2.getContext(), tab2));
+                //ViewCompat.setPaddingRelative(tabView2, paddingStart, paddingTop, paddingEnd, paddingBottom);
+            }
+        }
+    }
+
+    private void chooseUnselectedTab(int position){
+
+        ViewGroup tabStrip = (ViewGroup) tabLayout.getChildAt(0);
+        tabStrip.getChildAt(position).setSelected(false);
+
+    }
+
+    private void chooseinitialSelectedTab(int position){
+
+        ViewGroup tabStrip = (ViewGroup) tabLayout.getChildAt(0);
+        tabStrip.getChildAt(position).setSelected(true);
+
+    }
+
+    private void drawTabs(){
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if(tabLayout.getSelectedTabPosition()==0) {
+                    setTabBG(R.drawable.bg_path_tab_selected, R.drawable.bg_path_tab_unselected);
+                }
+                else {
+                    setTabBG(R.drawable.bg_path_tab_unselected, R.drawable.bg_path_tab_selected);
+                }
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab){
+
+                if(tabLayout.getSelectedTabPosition()==0) {
+                    setTabBG(R.drawable.bg_path_tab_selected, R.drawable.bg_path_tab_unselected);
+                }
+                else {
+                    setTabBG(R.drawable.bg_path_tab_unselected, R.drawable.bg_path_tab_selected);
+                }
+
+            }
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab){
+
+                /*if(tabLayout.getSelectedTabPosition()==0) {
+                    setTabBG(R.drawable.bg_path_tab_unselected, 1);
+                }
+                else {
+                    setTabBG(R.drawable.bg_path_tab_unselected, 0);
+                }*/
+
+            }
+        });
+
+    }
 
 
     public  void showPathGraphicInterface(View view) {

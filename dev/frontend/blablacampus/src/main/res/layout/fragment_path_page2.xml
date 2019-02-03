@@ -5,11 +5,39 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/margin_15"
     tools:context="com.example.cedriclingom.blablacampus.fragments.PathPage2Fragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/borderactivity">
+
+
+        <!--Panel de recherche trajet passager réduit-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_30"
+            android:background="@drawable/bordersubitem1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/margin_10"
+                android:text="           "
+                android:background="@drawable/border_purple_radius_btm_25_bg_white"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_mdpi"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/margin_25"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

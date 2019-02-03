@@ -29,6 +29,25 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+
+    <!--Tabs styles-->
+    <style name="path_tab_text_appearrance">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/margin_15</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+    </style>
+
+    <style name="path_tab_unselected">
+
+        <item name="android:color">@color/blablaCampuspurple</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/size_20</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+    </style>
+
     <style name="homeText">
         <item name="android:textSize">75dp</item>
         <item name="android:textColor">@color/blablaCampuspurple</item>
