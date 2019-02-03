@@ -30,8 +30,6 @@ import com.isima.blablacampus.security.utils.AppAuthProvider;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	@Autowired
-	private PasswordEncoder pwdEncoder;
 
 	@Autowired
 	private UserService userService;
@@ -73,7 +71,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     	
         AppAuthProvider provider = new AppAuthProvider();
         provider.setUserDetailsService(userService);
-        provider.setPasswordEncoder(pwdEncoder);
         
         return provider;
     }
