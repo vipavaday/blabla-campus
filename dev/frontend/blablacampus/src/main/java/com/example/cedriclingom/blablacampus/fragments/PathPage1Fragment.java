@@ -1,12 +1,13 @@
 package com.example.cedriclingom.blablacampus.fragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by cedric.lingom on 01/02/2019.

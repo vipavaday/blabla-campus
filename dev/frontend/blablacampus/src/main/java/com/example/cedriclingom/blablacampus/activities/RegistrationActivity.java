@@ -1,14 +1,15 @@
 package com.example.cedriclingom.blablacampus.activities;
 
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.viewPageAdapters.RegistrationPageAdapter;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
 
 public class RegistrationActivity extends AppCompatActivity {
 

@@ -1,11 +1,11 @@
 package com.example.cedriclingom.blablacampus.viewPageAdapters;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-
 import com.example.cedriclingom.blablacampus.fragments.RegistrationPage1Fragment;
 import com.example.cedriclingom.blablacampus.fragments.RegistrationPage2Fragment;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 /**
  * Created by cedric.lingom on 22/01/2019.

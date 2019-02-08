@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/app_bar_contacts"
+        android:icon="@drawable/contacts_mdpi"
+        android:title="@string/menu_item_contacts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/app_bar_infos"
+        android:icon="@drawable/userinfos_mdpi"
+        android:title="@string/menu_item_infos"
+        app:showAsAction="ifRoom"/>
+</menu>

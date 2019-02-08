@@ -1,17 +1,8 @@
 package com.example.cedriclingom.blablacampus.activities;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
-
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.support.v7.content.res.AppCompatResources;
 import android.view.View;
-
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
@@ -20,6 +11,13 @@ import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.fragments.PathPage1Fragment;
 import com.example.cedriclingom.blablacampus.fragments.PathPage2Fragment;
 import com.example.cedriclingom.blablacampus.viewPageAdapters.PathViewPagerAdapter;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
 
 public class PathActivity extends AppCompatActivity {
 
@@ -30,17 +28,6 @@ public class PathActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager myViewPager;
-
-
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
-    //private SectionsPagerAdapter mSectionsPagerAdapter;
 
 
 

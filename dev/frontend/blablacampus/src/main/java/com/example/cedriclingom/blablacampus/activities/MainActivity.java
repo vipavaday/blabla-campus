@@ -2,15 +2,25 @@ package com.example.cedriclingom.blablacampus.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.google.android.material.bottomappbar.BottomAppBar;
+
+import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
+
+    private BottomAppBar bottomAppBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +38,20 @@ public class MainActivity extends AppCompatActivity {
         // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
 
+        bottomAppBar = findViewById(R.id.bottom_app_bar);
+        setSupportActionBar(bottomAppBar);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
 
-   public  void showPathGraphicInterface(View view) {
+        MenuInflater inflater = this.getMenuInflater();
+        inflater.inflate(R.menu.bottomappbar_menu, menu);
+
+        return true;
+    }
+
+    public  void showPathGraphicInterface(View view) {
 
         Intent intent = new Intent(this, PathActivity.class);
         startActivity(intent);

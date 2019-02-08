@@ -1,4 +1,4 @@
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -106,7 +106,6 @@
             android:layout_below="@id/subcription_input">
 
             <Button
-                android:id="@+id/nextButton_registration"
                 android:layout_width="@dimen/margin_250"
                 android:layout_height="wrap_content"
                 android:text="Confirmer l'inscription"
@@ -141,4 +140,4 @@
 
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
