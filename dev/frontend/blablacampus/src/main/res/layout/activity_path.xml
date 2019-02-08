@@ -1,181 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blablaCampusCardBackground"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.example.cedriclingom.blablacampus.activities.PathActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <RelativeLayout
+        android:id="@+id/content_area"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blablaCampusWhite">
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:backgroundTint="@color/blablaCampusWhite"
+        android:elevation="0dp">
 
-        <TextView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trajets"
-            android:paddingHorizontal="@dimen/margin_15"
-            android:paddingVertical="@dimen/margin_15"
-            android:background="@color/blablaCampusWhite"
-            style="@style/string_trajets_text"/>
-
-
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/path_tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/margin_10"
-            app:tabTextAppearance="@style/path_tab_text_appearrance"
-            app:tabTextColor="@color/blablaCampuspurple"
-            app:tabSelectedTextColor="@color/blablaCampusWhite"
-            app:tabIndicatorColor="@color/blablaCampuspurple">
-
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Conducteur"/>
-
-            <android.support.design.widget.TabItem
-                android:id="@+id/passengerItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Passager"/>
-
-        </android.support.design.widget.TabLayout>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/path_viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:minHeight="200dp"
+            app:cardBackgroundColor="@color/blablaCampusWhite"
+            app:cardCornerRadius="@dimen/card_border_radius"
+            app:contentPadding="@dimen/card_padding">
 
             <RelativeLayout
-                android:id="@+id/relativelayout_bottom_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/backgroundmenupurple"
-                android:paddingBottom="@dimen/margin_10"
-                android:layout_alignParentBottom="true">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-
-                <LinearLayout
-                    android:id="@+id/image_conatct_icon"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/ridesCardTitle"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_alignParentLeft="true"
-                    style="@style/imageMargin">
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="0dip"
+                    android:paddingTop="@dimen/card_title_padding"
+                    android:paddingEnd="@dimen/card_title_padding"
+                    android:paddingBottom="@dimen/card_title_padding"
+                    android:text="@string/card_title_trajets"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/blablaCampuspurple"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/contacts_mdpi"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Contacts"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toRightOf="@+id/image_conatct_icon"
-                    style="@style/imageMargin">
+                    android:layout_below="@id/ridesCardTitle"
+                    android:background="@drawable/tab_layout_rounded"
+                    app:tabBackground="@drawable/tab_layout_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorFullWidth="true"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextColor="@color/blablaCampuspurple"
+                    app:tabTextColor="@color/blablaCampusWhite">
 
-                    <ImageView
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_item_passenger"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/notifications_mdpi"
-                        android:layout_gravity="center"/>
+                        android:text="@string/tab_item_conducteur" />
 
-                    <TextView
+                    <com.google.android.material.tabs.TabItem
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Notifications"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
+                        android:text="@string/tab_item_passager" />
 
-                </LinearLayout>
+                </com.google.android.material.tabs.TabLayout>
 
-                <LinearLayout
-                    android:id="@+id/image_personal_infos_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="@dimen/margin_25"
-                    style="@style/imageMargin">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/ridesCardViewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tabs">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/userinfos_mdpi"
-                        android:layout_gravity="center"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mes Infos"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toLeftOf="@id/image_personal_infos_icon"
-                    style="@style/imageMargin">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/accueil_ldpi"
-                        android:layout_gravity="center"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Acceuil"
-                        android:layout_gravity="center"
-                        style="@style/imageText"/>
-
-                </LinearLayout>
-
+                </androidx.viewpager.widget.ViewPager>
 
             </RelativeLayout>
 
-        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <ImageView
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_app_bar_CL"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="15"
+        android:elevation="10dp">
+
+        <!-- Other components and views -->
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/blablaCampuspurple"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="8dip"
+            app:navigationContentDescription="@string/menu_item_notifications"
+            app:navigationIcon="@drawable/notifications_mdpi" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="closeRidesCard"
             android:src="@drawable/trajets_mdpi"
-            android:background="@drawable/bordersmbtnrounded"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="@dimen/margin_25"
-            android:onClick="showPathGraphicInterface"/>
+            app:backgroundTint="@color/blablaCampusPurpleClear"
+            app:layout_anchor="@+id/bottom_app_bar" />
 
-    </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

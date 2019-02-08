@@ -8,4 +8,5 @@
     <color name="blablaCampusBlue">#146AA6</color>
     <color name="blablaCampusPurpleClear">#3C1E48</color>
     <color name="blablaCampusWhite">#FFFFFF</color>
+    <color name="blablaCampusCardBackground">#DFDFDF</color>
 </resources>

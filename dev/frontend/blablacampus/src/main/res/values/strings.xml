@@ -10,6 +10,9 @@
     <string name="menu_item_notifications">Notifications</string>
     <string name="menu_item_accueil">Accueil</string>
     <string name="menu_item_infos">Mes infos</string>
+    <string name="tab_item_conducteur">Conducteur</string>
+    <string name="tab_item_passager">Passager</string>
+    <string name="card_title_trajets">Trajets</string>
 
 
 </resources>

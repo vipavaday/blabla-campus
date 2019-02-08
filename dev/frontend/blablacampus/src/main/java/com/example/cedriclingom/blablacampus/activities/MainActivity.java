@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public  void showPathGraphicInterface(View view) {
+    public  void showRideCard(View view) {
 
         Intent intent = new Intent(this, PathActivity.class);
         startActivity(intent);
