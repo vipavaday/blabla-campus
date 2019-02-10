@@ -110,14 +110,14 @@
             app:fabAlignmentMode="center"
             app:fabCradleMargin="8dip"
             app:navigationContentDescription="@string/menu_item_notifications"
-            app:navigationIcon="@drawable/notifications_mdpi" />
+            app:navigationIcon="@drawable/notifications" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="closeRidesCard"
-            android:src="@drawable/trajets_mdpi"
+            android:src="@drawable/rides"
             app:backgroundTint="@color/blablaCampusPurpleClear"
             app:layout_anchor="@+id/bottom_app_bar" />
 

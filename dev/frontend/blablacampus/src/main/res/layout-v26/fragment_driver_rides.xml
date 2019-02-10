@@ -4,8 +4,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <!--Panel de recherche trajet passager réduit-->
-    <androidx.cardview.widget.CardView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="@dimen/margin_30"
@@ -23,8 +24,9 @@
             android:layout_height="wrap_content"
             android:src="@drawable/add"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="@dimen/margin_25"/>
+            android:layout_marginTop="@dimen/margin_25"
+            android:contentDescription="TODO" />
 
-    </androidx.cardview.widget.CardView>
-
+    </FrameLayout>
+    
 </LinearLayout>

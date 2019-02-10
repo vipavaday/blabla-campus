@@ -2,11 +2,6 @@ package com.example.cedriclingom.blablacampus.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -16,7 +11,8 @@ import android.view.WindowManager;
 import com.example.cedriclingom.blablacampus.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
-import java.util.zip.Inflater;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 

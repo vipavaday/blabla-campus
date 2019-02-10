@@ -55,7 +55,7 @@
             app:backgroundTint="@color/blablaCampuspurple"
             app:fabAlignmentMode="center"
             app:fabCradleMargin="8dip"
-            app:navigationIcon="@drawable/notifications_mdpi"
+            app:navigationIcon="@drawable/notifications"
             app:navigationContentDescription="@string/menu_item_notifications"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="showRideCard"
-            android:src="@drawable/trajets_mdpi"
+            android:src="@drawable/rides"
             app:backgroundTint="@color/blablaCampusPurpleClear"
             app:layout_anchor="@+id/bottom_app_bar" />
 

@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/margin_10"
-                android:src="@drawable/add_ldpi"
+                android:src="@drawable/add"
                 android:layout_gravity="top|right"/>
 
         </FrameLayout>

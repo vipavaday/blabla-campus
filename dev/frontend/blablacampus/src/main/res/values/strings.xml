@@ -13,6 +13,9 @@
     <string name="tab_item_conducteur">Conducteur</string>
     <string name="tab_item_passager">Passager</string>
     <string name="card_title_trajets">Trajets</string>
+    <string name="driver_rides_starting_point">Départ</string>
+    <string name="driver_rides_endpoint">Arrivée</string>
+    <string name="ride">Ride</string>
 
 
 </resources>
