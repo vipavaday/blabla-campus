@@ -1,5 +1,6 @@
 package com.example.cedriclingom.blablacampus.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -8,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 import com.example.cedriclingom.blablacampus.viewPageAdapters.RidesViewPagerAdapter;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.tabs.TabLayout;
@@ -22,6 +24,53 @@ public class PathActivity extends AppCompatActivity {
     private BottomAppBar bottomAppBar;
 
     private ViewPager viewPager;
+
+    private TabLayout tabLayout = null;
+
+
+
+
+
+
+
+
+
+
+
+
+    /*private void addClickActionOnDriverTab(){
+
+        if(tabLayout == null){
+
+            tabLayout = findViewById(R.id.tabs);
+
+        }
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+
+                if(tab.getPosition() == 1) {
+
+                    testUserConnection();
+
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {}
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+                if(tab.getPosition() == 1) {
+
+                    testUserConnection();
+
+                }
+
+            }
+        });
+    }*/
 
 
     @Override
@@ -48,15 +97,23 @@ public class PathActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.ridesCardViewpager);
         viewPager.setAdapter(new RidesViewPagerAdapter(getSupportFragmentManager(), this));
 
-        TabLayout tabLayout = findViewById(R.id.tabs);
+        tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+        //addClickActionOnDriverTab();
     }
+
+
+
+
+
+
+
+
 
     public void onDriverTabClick(){
 
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -72,4 +129,6 @@ public class PathActivity extends AppCompatActivity {
         this.finish();
 
     }
+
+
 }

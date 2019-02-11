@@ -12,6 +12,24 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class PassengerRidesFragment extends Fragment {
+    
+
+    private static PassengerRidesFragment fragment;
+
+
+
+    public static PassengerRidesFragment newInstance() {
+
+        if(PassengerRidesFragment.fragment == null){
+
+            PassengerRidesFragment.fragment = new PassengerRidesFragment();
+        }
+
+        return PassengerRidesFragment.fragment;
+    }
+
+
+
 
     @Nullable
     @Override

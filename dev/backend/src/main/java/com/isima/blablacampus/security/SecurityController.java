@@ -66,8 +66,8 @@ public class SecurityController {
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body(tokenOwner);
 	}
 	
-	@RequestMapping(path="/user/status", method=RequestMethod.GET)
-	public ResponseEntity<User> getUserStatus(HttpServletRequest request){
+	@RequestMapping(path="/user/infos", method=RequestMethod.GET)
+	public ResponseEntity<User> getUserInfos(HttpServletRequest request){
 		
 		String login = request.getUserPrincipal().getName();
 		User u = userService.loadUserByUsername(login);

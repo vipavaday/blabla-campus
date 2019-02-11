@@ -3,8 +3,10 @@ package com.example.cedriclingom.blablacampus.viewPageAdapters;
 import android.content.Context;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.activities.PathActivity;
 import com.example.cedriclingom.blablacampus.fragments.DriverRidesFragment;
 import com.example.cedriclingom.blablacampus.fragments.PassengerRidesFragment;
+import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -29,8 +31,9 @@ public class RidesViewPagerAdapter extends FragmentPagerAdapter {
         childFragments = new LinkedList<>();
         childNames = new LinkedList<>();
 
-        addChild(new DriverRidesFragment(), ctx.getResources().getString(R.string.tab_item_conducteur));
         addChild(new PassengerRidesFragment(), ctx.getResources().getString(R.string.tab_item_passager));
+        addChild(new DriverRidesFragment(), ctx.getResources().getString(R.string.tab_item_conducteur));
+
     }
 
     private void addChild(Fragment f, String name){
