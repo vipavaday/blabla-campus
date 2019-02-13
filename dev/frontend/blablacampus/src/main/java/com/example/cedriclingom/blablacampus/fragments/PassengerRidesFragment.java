@@ -6,30 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
-public class PassengerRidesFragment extends Fragment {
-    
+public class PassengerRidesFragment extends AuthFragment {
 
-    private static PassengerRidesFragment fragment;
-
-
-
-    public static PassengerRidesFragment newInstance() {
-
-        if(PassengerRidesFragment.fragment == null){
-
-            PassengerRidesFragment.fragment = new PassengerRidesFragment();
-        }
-
-        return PassengerRidesFragment.fragment;
+    public PassengerRidesFragment() {
+        super();
+        setAuth(false);
     }
-
-
-
 
     @Nullable
     @Override

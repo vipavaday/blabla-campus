@@ -16,7 +16,7 @@ public final class ConnectionService {
 
     public static boolean isConnected() {
 
-         return userInfos != null;
+        return userInfos != null;
     }
 
 

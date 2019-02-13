@@ -7,25 +7,19 @@
 
 
     <!--Panel création  trajet driver réduit-->
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/margin_30"
-        android:background="@drawable/bordersubitem1">
+        android:layout_height="match_parent"
+        android:background="@drawable/bordersubitem1"
+        android:paddingBottom="@dimen/margin_30">
 
-        <TextView
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="@dimen/margin_10"
-            android:text="           "
-            android:background="@drawable/border_purple_radius_btm_25_bg_white"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/add"
-            android:layout_gravity="bottom|center"
-            android:layout_marginTop="@dimen/margin_25"/>
+            android:onClick="testUserConnection"
+            android:text="Button" />
 
     </androidx.cardview.widget.CardView>
 
