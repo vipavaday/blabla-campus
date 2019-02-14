@@ -19,7 +19,7 @@ public class DriverRidesFragment extends AuthFragment {
 
 
     public DriverRidesFragment() {
-
+        super();
         setAuth(true);
         setAccessDeniedHandler(AccessDeniedHandlerFactory.getHandler(PathActivity.ACCESS_DENIED_HANDLER));
     }

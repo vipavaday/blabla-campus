@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.cedriclingom.blablacampus.activities.AuthentificationActivity;
 import com.example.cedriclingom.blablacampus.activities.RegistrationActivity;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import static android.app.Activity.RESULT_CANCELED;
 import static android.app.Activity.RESULT_OK;
 
 public abstract class AuthFragment extends Fragment {
@@ -24,7 +26,6 @@ public abstract class AuthFragment extends Fragment {
     private boolean auth;
 
     private Bundle bundle;
-
 
 
     public AuthFragment() {
@@ -59,7 +60,7 @@ public abstract class AuthFragment extends Fragment {
 
     private  void showConnectionCard() {
 
-        Intent intent =  new Intent(this.getActivity(), RegistrationActivity.class);
+        Intent intent =  new Intent(this.getActivity(), AuthentificationActivity.class);
 
         startActivityForResult(intent, PICK_USER_REQUEST);
 
@@ -77,7 +78,7 @@ public abstract class AuthFragment extends Fragment {
                 // The Intent's data Uri identifies which contact was selected.
 
                 // Do something with the contact here (bigger example below)
-            }else{
+            }else if(resultCode == RESULT_CANCELED){
                 this.accessDeniedHandler.onAccessDenied();
             }
         }
