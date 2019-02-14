@@ -26,13 +26,15 @@ public abstract class AuthFragment extends Fragment {
     private Bundle bundle;
 
 
+
     public AuthFragment() {
         super();
 
-        this.auth = true;
+        auth = true;
         bundle = new Bundle();
+
         bundle.putBoolean("auth", auth);
-        this.setArguments(bundle);
+        setArguments(bundle);
     }
 
     public void onAuthEnabledPageSelected() {
@@ -76,7 +78,7 @@ public abstract class AuthFragment extends Fragment {
 
                 // Do something with the contact here (bigger example below)
             }else{
-                getActivity().getSupportFragmentManager().popBackStack();
+                this.accessDeniedHandler.onAccessDenied();
             }
         }
     }
@@ -103,5 +105,9 @@ public abstract class AuthFragment extends Fragment {
         }
 
         return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    protected void setAccessDeniedHandler(IAccessDeniedHandler accessDeniedHandler) {
+        this.accessDeniedHandler = accessDeniedHandler;
     }
 }

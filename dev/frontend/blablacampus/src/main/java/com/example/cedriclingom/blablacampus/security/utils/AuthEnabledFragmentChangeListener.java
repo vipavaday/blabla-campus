@@ -10,12 +10,18 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
 
     private boolean first = true;
 
+    private int lastPage;
+
+    private int curPage;
+
     private List<AuthFragment> pages;
 
 
     public AuthEnabledFragmentChangeListener(AuthEnabledFragmentAdapter fragmentAdapter) {
 
         pages = fragmentAdapter.getPages();
+        curPage = 0;
+        lastPage = 0;
     }
 
     @Override
@@ -25,6 +31,9 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
             onPageSelected(0);
             first = false;
         }
+
+        lastPage = curPage;
+        curPage = position;
     }
 
     @Override
@@ -40,5 +49,9 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
     @Override
     public void onPageScrollStateChanged(int state) {
 
+    }
+
+    public int getLastPage() {
+        return lastPage;
     }
 }

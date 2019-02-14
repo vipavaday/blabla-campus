@@ -13,8 +13,6 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
 
     private Context context;
 
-    private int previousPosition;
-
     private List<AuthFragment> childFragments;
 
     private List<String> childNames;
@@ -27,7 +25,6 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
 
         childFragments = new LinkedList<>();
         childNames = new LinkedList<>();
-        previousPosition = 0;
 
         initContent();
     }

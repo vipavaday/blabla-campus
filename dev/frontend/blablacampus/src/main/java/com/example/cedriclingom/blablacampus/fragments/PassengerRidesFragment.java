@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.activities.PathActivity;
+import com.example.cedriclingom.blablacampus.security.utils.AccessDeniedHandlerFactory;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
@@ -16,6 +18,7 @@ public class PassengerRidesFragment extends AuthFragment {
     public PassengerRidesFragment() {
         super();
         setAuth(false);
+        setAccessDeniedHandler(AccessDeniedHandlerFactory.getHandler(PathActivity.ACCESS_DENIED_HANDLER));
     }
 
     @Nullable
