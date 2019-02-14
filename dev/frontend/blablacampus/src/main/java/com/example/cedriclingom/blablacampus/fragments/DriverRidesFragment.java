@@ -17,7 +17,7 @@ public class DriverRidesFragment extends AuthFragment {
 
 
     public DriverRidesFragment() {
-
+        super();
         setAuth(true);
     }
 

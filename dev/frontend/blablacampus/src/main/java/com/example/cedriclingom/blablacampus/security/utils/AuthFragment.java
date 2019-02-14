@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.cedriclingom.blablacampus.activities.AuthentificationActivity;
 import com.example.cedriclingom.blablacampus.activities.RegistrationActivity;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 
@@ -57,7 +58,7 @@ public abstract class AuthFragment extends Fragment {
 
     private  void showConnectionCard() {
 
-        Intent intent =  new Intent(this.getActivity(), RegistrationActivity.class);
+        Intent intent =  new Intent(this.getActivity(), AuthentificationActivity.class);
 
         startActivityForResult(intent, PICK_USER_REQUEST);
 
