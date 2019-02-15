@@ -5,14 +5,14 @@ import java.util.Map;
 
 public abstract class AccessDeniedHandlerFactory {
 
-    private static Map<String, IAccessDeniedHandler> handlers =  new HashMap<>();
+    private static Map<String, IAccessAuthHandler> handlers =  new HashMap<>();
 
-    public static IAccessDeniedHandler getHandler(String handlerName){
+    public static IAccessAuthHandler getHandler(String handlerName){
 
         return handlers.get(handlerName);
     }
 
-    public static void addAccessDeniedHandler(String handlerName, IAccessDeniedHandler handler){
+    public static void addAccessDeniedHandler(String handlerName, IAccessAuthHandler handler){
 
         handlers.put(handlerName, handler);
     }

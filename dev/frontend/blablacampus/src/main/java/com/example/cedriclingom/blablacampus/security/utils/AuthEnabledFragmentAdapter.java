@@ -55,6 +55,7 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         return childFragments.get(position);
+
     }
 
     @Override

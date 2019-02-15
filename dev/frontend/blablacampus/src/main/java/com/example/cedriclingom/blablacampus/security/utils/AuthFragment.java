@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.activities.AuthentificationActivity;
-import com.example.cedriclingom.blablacampus.activities.RegistrationActivity;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 
 import androidx.annotation.NonNull;
@@ -21,7 +20,7 @@ public abstract class AuthFragment extends Fragment {
 
     static final int PICK_USER_REQUEST = 1;
 
-    private IAccessDeniedHandler accessDeniedHandler;
+    private IAccessAuthHandler accessAuthHandler;
 
     private boolean auth;
 
@@ -53,8 +52,6 @@ public abstract class AuthFragment extends Fragment {
         if(!ConnectionService.isConnected()){
 
             showConnectionCard();
-            ConnectionService.doUserConnection();
-
         }
     }
 
@@ -74,12 +71,13 @@ public abstract class AuthFragment extends Fragment {
 
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
-                // The user picked a contact.
-                // The Intent's data Uri identifies which contact was selected.
 
-                // Do something with the contact here (bigger example below)
+                this.accessAuthHandler.onAccessAccepted();
+
             }else if(resultCode == RESULT_CANCELED){
-                this.accessDeniedHandler.onAccessDenied();
+
+                this.accessAuthHandler.onAccessDenied();
+
             }
         }
     }
@@ -108,7 +106,7 @@ public abstract class AuthFragment extends Fragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    protected void setAccessDeniedHandler(IAccessDeniedHandler accessDeniedHandler) {
-        this.accessDeniedHandler = accessDeniedHandler;
+    protected void setAccessDeniedHandler(IAccessAuthHandler accessDeniedHandler) {
+        this.accessAuthHandler = accessDeniedHandler;
     }
 }

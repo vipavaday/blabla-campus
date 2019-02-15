@@ -76,6 +76,7 @@
 
 
                 <EditText
+                    android:id="@+id/connection_email_input"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_40"
                     android:inputType="textEmailAddress"
@@ -88,6 +89,7 @@
                     android:layout_marginTop="@dimen/margin_15">
 
                     <EditText
+                        android:id="@+id/connection_pwd_input"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/margin_40"
                         android:inputType="textPassword"
@@ -136,6 +138,7 @@
                 android:paddingTop="@dimen/margin_15">
 
                 <Button
+                    android:id="@+id/connectionButton"
                     android:layout_width="@dimen/margin_205"
                     android:layout_height="wrap_content"
                     android:text="Se connecter"

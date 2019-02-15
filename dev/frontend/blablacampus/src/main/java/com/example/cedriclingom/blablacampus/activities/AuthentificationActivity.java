@@ -1,15 +1,24 @@
 package com.example.cedriclingom.blablacampus.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import cz.msebera.android.httpclient.Header;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
+import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 
 public class AuthentificationActivity extends AppCompatActivity {
 
@@ -29,6 +38,8 @@ public class AuthentificationActivity extends AppCompatActivity {
 
         // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
+
+        addListenerOnConcetionButton();
     }
 
 
@@ -55,4 +66,57 @@ public class AuthentificationActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+    private void addListenerOnConcetionButton(){
+
+        Button button = (Button) findViewById(R.id.connectionButton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText emailView = (EditText)findViewById(R.id.connection_email_input);
+
+                EditText pwdView = (EditText) findViewById(R.id.connection_pwd_input);
+
+                ConnectionModel connectionModel = new ConnectionModel(emailView.getText().toString(), pwdView.getText().toString());
+
+
+                ConnectionService.doUserConnection(connectionModel, new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+                        if(statusCode == 200) {
+
+
+                            System.out.println("Request Success with statuscode: "+ statusCode);
+
+                            ConnectionService.setConnectionStatus(true);
+
+                            setResult(RESULT_OK);
+
+                            finish();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+                        System.out.println("Request failed with statuscode: "+ statusCode);
+
+                        ConnectionService.setConnectionStatus(false);
+
+                    }
+                });
+
+            }
+        });
+
+    }
+
+
+
+
 }

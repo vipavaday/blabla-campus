@@ -2,7 +2,7 @@ package com.example.cedriclingom.blablacampus.security.utils;
 
 import androidx.viewpager.widget.ViewPager;
 
-public class AuthEnabledViewPager implements IAccessDeniedHandler{
+public class AuthEnabledViewPager implements IAccessAuthHandler {
 
 
     private ViewPager vp;
@@ -18,6 +18,11 @@ public class AuthEnabledViewPager implements IAccessDeniedHandler{
     public void onAccessDenied() {
 
         vp.setCurrentItem(changeListener.getLastPage());
+    }
+
+    @Override
+    public void onAccessAccepted() {
+        vp.setCurrentItem(changeListener.getCurrentPage());
     }
 
     public ViewPager getViewPager() {

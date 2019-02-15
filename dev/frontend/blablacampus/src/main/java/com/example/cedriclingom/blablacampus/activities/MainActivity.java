@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
     private BottomAppBar bottomAppBar;
 
 
-    private static String localMachine ="51.77.158.156";
-    private static String distantMachine = "localhost";
+    private static String localMachine ="localhost"; //127.0.0.1 172.20.10.2
+    private static String distantMachine = "51.77.158.156";
 
 
-    public static String server = "http://"+ localMachine + ":8080/";
+    public static String server = "http://"+ distantMachine + ":8080";
 
 
 

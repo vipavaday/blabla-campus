@@ -7,11 +7,13 @@ import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.activities.PathActivity;
+import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 import com.example.cedriclingom.blablacampus.security.utils.AccessDeniedHandlerFactory;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
 
 public class PassengerRidesFragment extends AuthFragment {
 
@@ -21,6 +23,33 @@ public class PassengerRidesFragment extends AuthFragment {
         setAccessDeniedHandler(AccessDeniedHandlerFactory.getHandler(PathActivity.ACCESS_DENIED_HANDLER));
     }
 
+
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+
+        super.onCreate(savedInstanceState);
+
+    }
+
+
+    @Override
+    public void onStart(){
+
+        super.onStart();
+
+        /*FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.detach(this).attach(this).commit();
+
+        System.out.println("I can get the Passenger Rides!");*/
+    }
+
+    @Override
+    public void onResume(){
+
+        super.onResume();
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,7 +57,6 @@ public class PassengerRidesFragment extends AuthFragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View passengerRidesView = inflater.inflate(R.layout.fragment_passenger_rides, container, false);
-
 
         return passengerRidesView;
     }
