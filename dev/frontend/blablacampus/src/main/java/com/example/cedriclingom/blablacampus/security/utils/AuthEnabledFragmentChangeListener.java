@@ -42,6 +42,8 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
         if(pages.get(position).isAuthentificated()) {
 
             pages.get(position).onAuthEnabledPageSelected();
+
+            curPage = position;
         }
 
     }
@@ -53,5 +55,9 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
 
     public int getLastPage() {
         return lastPage;
+    }
+
+    public int getCurrentPage() {
+        return curPage;
     }
 }

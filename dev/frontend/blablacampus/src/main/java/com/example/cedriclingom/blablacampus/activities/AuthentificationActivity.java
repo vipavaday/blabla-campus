@@ -9,6 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Space;
 import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
+
+import cz.msebera.android.httpclient.Header;
+import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
+import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.fragments.auth.ForgottenPwdFragment;
@@ -16,11 +23,11 @@ import com.example.cedriclingom.blablacampus.fragments.auth.LoginFragment;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 
 public class AuthentificationActivity extends BaseActivity {
 
     private ScrollView contentView;
+
 
     private LinearLayout appName;
 
@@ -129,5 +136,9 @@ public class AuthentificationActivity extends BaseActivity {
 
         super.replaceContentAreaFragment(f);
         titleBarText.setText(f.getTitle());
+    }
+
+    public void connection(View v){
+
     }
 }
