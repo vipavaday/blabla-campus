@@ -32,7 +32,7 @@ public abstract class AuthFragment extends Fragment {
     public AuthFragment() {
         super();
 
-        auth = true;
+        auth = false;
         bundle = new Bundle();
 
         bundle.putBoolean("auth", auth);
@@ -112,4 +112,7 @@ public abstract class AuthFragment extends Fragment {
     protected void setAccessDeniedHandler(IAccessDeniedHandler accessDeniedHandler) {
         this.accessDeniedHandler = accessDeniedHandler;
     }
+
+    public abstract int getTitle();
+
 }

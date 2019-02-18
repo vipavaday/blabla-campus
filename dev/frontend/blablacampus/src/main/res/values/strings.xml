@@ -8,21 +8,23 @@
     <string name="title_activity_path">PathActivity</string>
     <string name="menu_item_contacts">Contacts</string>
     <string name="menu_item_notifications">Notifications</string>
-    <string name="menu_item_accueil">Accueil</string>
     <string name="menu_item_infos">Mes infos</string>
-    <string name="tab_item_conducteur">Conducteur</string>
+    <string name="tab_item_driver">Conducteur</string>
     <string name="tab_item_passager">Passager</string>
-    <string name="card_title_trajets">Trajets</string>
+    <string name="card_title_rides">Trajets</string>
     <string name="driver_rides_starting_point">Départ</string>
     <string name="driver_rides_endpoint">Arrivée</string>
     <string name="ride">Ride</string>
-    <string name="connection">Connexion</string>
     <string name="cancel">Annuler</string>
     <string name="subscribe_btn">S\'inscrire</string>
     <string name="forgotten_pwd_msg">J\'ai oublié mon mot de passe</string>
     <string name="login">Se connecter</string>
     <string name="pseudo_hint">Pseudo</string>
     <string name="password">Mot de passe</string>
+    <string name="recover_pwd_btn">Récupérer</string>
+    <string name="forgotten_pwd_title">Récupérer mon mot de passe</string>
+    <string name="login_title">Connexion</string>
+    <string name="home_title">Accueil</string>
 
 
 </resources>

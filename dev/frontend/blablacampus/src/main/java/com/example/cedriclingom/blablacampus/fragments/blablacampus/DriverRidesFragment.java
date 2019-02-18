@@ -1,4 +1,4 @@
-package com.example.cedriclingom.blablacampus.fragments;
+package com.example.cedriclingom.blablacampus.fragments.blablacampus;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,11 +12,14 @@ import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-public class PassengerRidesFragment extends AuthFragment {
+public class DriverRidesFragment extends AuthFragment {
 
-    public PassengerRidesFragment() {
+    private static DriverRidesFragment fragment;
+
+
+    public DriverRidesFragment() {
         super();
-        setAuth(false);
+        setAuth(true);
         setAccessDeniedHandler(AccessDeniedHandlerFactory.getHandler(RidesFragment.ACCESS_DENIED_HANDLER));
     }
 
@@ -26,9 +29,14 @@ public class PassengerRidesFragment extends AuthFragment {
 
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View passengerRidesView = inflater.inflate(R.layout.fragment_passenger_rides, container, false);
+        View driverRidesView = inflater.inflate(R.layout.fragment_rides_driver, container, false);
 
+        return driverRidesView;
+    }
 
-        return passengerRidesView;
+    @Override
+    public int getTitle() {
+
+        return R.string.tab_item_driver;
     }
 }

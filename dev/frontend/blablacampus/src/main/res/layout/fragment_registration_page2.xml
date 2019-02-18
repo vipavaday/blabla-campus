@@ -108,10 +108,10 @@
             <Button
                 android:layout_width="@dimen/margin_250"
                 android:layout_height="wrap_content"
-                android:text="Confirmer l'inscription"
+                android:text="S'inscrire"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
-                style="@style/confrimRegistrationButton"/>
+                style="@style/outlinedButton"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="      "
+                    android:text=""
                     android:textSize="@dimen/size_8"
                     android:background="@drawable/bg_white_border_circle_xs__purple"/>
 

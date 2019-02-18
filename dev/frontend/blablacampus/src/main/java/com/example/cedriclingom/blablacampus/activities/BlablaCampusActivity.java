@@ -2,8 +2,6 @@ package com.example.cedriclingom.blablacampus.activities;
 
 import androidx.fragment.app.FragmentTransaction;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,24 +11,19 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.fragments.HomeFragment;
-import com.example.cedriclingom.blablacampus.fragments.RidesFragment;
+import com.example.cedriclingom.blablacampus.fragments.blablacampus.HomeFragment;
+import com.example.cedriclingom.blablacampus.fragments.blablacampus.RidesFragment;
+import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-public class BlablaCampusActivity extends AppCompatActivity {
+public class BlablaCampusActivity extends BaseActivity {
 
     private BottomAppBar bottomAppBar;
 
-    private FragmentPage currentFragment;
-
-    private enum FragmentPage {
-        RIDES,
-        HOME
-    }
+    private RelativeLayout contentArea;
 
 
     @Override
@@ -39,21 +32,16 @@ public class BlablaCampusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         Window window = this.getWindow();
-
-        // clear FLAG_TRANSLUCENT_STATUS flag:
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        // finally change the color
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.blablaCampuspurple));
 
         setContentView(R.layout.activity_blablacampus);
         bottomAppBar = findViewById(R.id.bottom_app_bar);
+        contentArea = findViewById(R.id.content_area);
         setSupportActionBar(bottomAppBar);
 
-        replaceContentAreaFragment(new HomeFragment(), FragmentPage.HOME);
+        replaceContentAreaFragment(new HomeFragment());
     }
 
     @Override
@@ -67,22 +55,34 @@ public class BlablaCampusActivity extends AppCompatActivity {
 
     public void showRideCard(View view) {
 
-        if(currentFragment != FragmentPage.RIDES) {
-            replaceContentAreaFragment(new RidesFragment(), FragmentPage.RIDES);
-        }else{
-            replaceContentAreaFragment(new HomeFragment(), FragmentPage.HOME);
-        }
+        AuthFragment f = (getCurrentFragment() instanceof RidesFragment)? new HomeFragment() : new RidesFragment();
+        replaceContentAreaFragment(f);
+    }
+
+    public void showHomePage(View v){
+
+        replaceContentAreaFragment(new HomeFragment());
     }
 
 
-    private void replaceContentAreaFragment(Fragment f, FragmentPage page){
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+    @Override
+    protected View getRootView() {
+        return contentArea;
+    }
 
-        transaction.replace(R.id.content_area, f);
-        transaction.addToBackStack(null);
+    @Override
+    protected void onSoftKeyboardOpen() {
 
-        transaction.commit();
-        currentFragment = page;
+    }
+
+    @Override
+    protected void onSoftKeyboardClose() {
+
+    }
+
+    @Override
+    protected int getFragmentContainer() {
+        return R.id.content_area;
     }
 }

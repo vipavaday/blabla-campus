@@ -139,7 +139,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="strokeColor">@color/colorOnSurface</item>
-        <item name="strokeWidth">1.5dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:paddingStart">40dp</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
     </style>
 
     <style name="outlinedInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

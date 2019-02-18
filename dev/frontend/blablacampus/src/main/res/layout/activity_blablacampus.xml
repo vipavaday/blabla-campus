@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/fragment_menu"
-        android:name="com.example.cedriclingom.blablacampus.fragments.BottomAppBarFragment"
+        android:name="com.example.cedriclingom.blablacampus.fragments.blablacampus.BottomAppBarFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="8" />

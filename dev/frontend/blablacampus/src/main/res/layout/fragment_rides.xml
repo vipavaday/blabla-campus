@@ -34,7 +34,7 @@
                 android:paddingTop="@dimen/card_title_padding"
                 android:paddingEnd="@dimen/card_title_padding"
                 android:paddingBottom="@dimen/card_title_padding"
-                android:text="@string/card_title_trajets"
+                android:text="@string/card_title_rides"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/blablaCampuspurple"
                 android:textSize="18sp"
@@ -65,7 +65,7 @@
                     android:id="@+id/tab_driver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tab_item_conducteur" />
+                    android:text="@string/tab_item_driver" />
 
 
 

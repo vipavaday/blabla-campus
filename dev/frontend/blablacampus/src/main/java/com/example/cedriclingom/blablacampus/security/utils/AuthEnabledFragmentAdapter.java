@@ -15,16 +15,12 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
 
     private List<AuthFragment> childFragments;
 
-    private List<String> childNames;
-
 
     public AuthEnabledFragmentAdapter(FragmentManager fm, Context ctx) {
         super(fm);
 
         this.context = ctx;
-
         childFragments = new LinkedList<>();
-        childNames = new LinkedList<>();
 
         initContent();
     }
@@ -33,10 +29,9 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
     public abstract void initContent();
 
 
-    protected void addChild(AuthFragment f, String name){
+    protected void addChild(AuthFragment f){
 
         childFragments.add(f);
-        childNames.add(name);
     }
 
     public List<AuthFragment> getPages() {
@@ -48,7 +43,7 @@ public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 
-        return childNames.get(position);
+        return context.getResources().getString(childFragments.get(position).getTitle());
     }
 
     @Override

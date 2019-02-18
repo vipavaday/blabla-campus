@@ -1,4 +1,4 @@
-package com.example.cedriclingom.blablacampus.fragments;
+package com.example.cedriclingom.blablacampus.fragments.blablacampus;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,16 +14,16 @@ import com.google.android.material.tabs.TabLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class RidesFragment extends Fragment {
+public class RidesFragment extends AuthFragment {
 
     private AuthEnabledViewPager authEnabledViewPager;
 
     private TabLayout tabLayout;
 
     public static final String ACCESS_DENIED_HANDLER = "Rides_Handler";
+
 
     @Nullable
     @Override
@@ -32,7 +32,6 @@ public class RidesFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View bottomAppBarCL = inflater.inflate(R.layout.fragment_rides, container, false);
-
         ViewPager vp = bottomAppBarCL.findViewById(R.id.ridesCardViewpager);
 
         authEnabledViewPager = new AuthEnabledViewPager(vp);
@@ -42,8 +41,8 @@ public class RidesFragment extends Fragment {
 
             @Override
             public void initContent() {
-                addChild(new PassengerRidesFragment(), getResources().getString(R.string.tab_item_passager));
-                addChild(new DriverRidesFragment(), getResources().getString(R.string.tab_item_conducteur));
+                addChild(new PassengerRidesFragment());
+                addChild(new DriverRidesFragment());
             }
         };
 
@@ -53,5 +52,11 @@ public class RidesFragment extends Fragment {
         tabLayout.setupWithViewPager(authEnabledViewPager.getViewPager());
 
         return bottomAppBarCL;
+    }
+
+    @Override
+    public int getTitle() {
+
+        return R.string.card_title_rides;
     }
 }

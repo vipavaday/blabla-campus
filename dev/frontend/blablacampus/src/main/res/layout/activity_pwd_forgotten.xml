@@ -1,59 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView android:id="@+id/content_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="@color/blablaCampusWhite"
-    tools:context="com.example.cedriclingom.blablacampus.activities.PwdForgottenActivity">
+    android:fillViewport="true">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingHorizontal="@dimen/margin_10">
-
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="@dimen/margin_30">
+            android:paddingHorizontal="@dimen/margin_10">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/app_sub_name1"
-                android:layout_gravity="center"
-                style="@style/AuthBlaBlaCampusText" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/app_sub_name2"
-                android:layout_gravity="center"
-                style="@style/AuthBlaBlaCampusText"/>
 
-            <EditText
-                android:layout_width="@dimen/margin_270"
-                android:layout_height="@dimen/margin_40"
-                android:layout_marginTop="@dimen/margin_40"
-                android:layout_gravity="center_horizontal"
-                android:inputType="textEmailAddress"
-                android:hint="Email"
-                style="@style/connexionInput"/>
-
-            <Button
-                android:layout_width="@dimen/margin_205"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_30"
-                android:text="Envoyer"
-                android:layout_gravity="center"
-                style="@style/seconnecterButton"/>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>
