@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:backgroundTint="@color/blablaCampusWhite"
+    android:elevation="0dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginEnd="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:minHeight="200dp"
+        app:cardBackgroundColor="@color/blablaCampusWhite"
+        app:cardCornerRadius="@dimen/card_border_radius"
+        app:contentPadding="@dimen/card_padding">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ridesCardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingStart="0dip"
+                android:paddingTop="@dimen/card_title_padding"
+                android:paddingEnd="@dimen/card_title_padding"
+                android:paddingBottom="@dimen/card_title_padding"
+                android:text="@string/card_title_trajets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/blablaCampuspurple"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ridesCardTitle"
+                android:background="@drawable/tab_layout_rounded"
+                app:tabBackground="@drawable/tab_layout_selector"
+                app:tabGravity="fill"
+                app:tabIndicatorFullWidth="true"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/blablaCampuspurple"
+                app:tabTextColor="@color/blablaCampusWhite">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_passenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_item_passager" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_item_conducteur" />
+
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ridesCardViewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabs"
+                android:elevation="5dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

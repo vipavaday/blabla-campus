@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_app_bar_CL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:elevation="10dp">
+
+    <androidx.appcompat.widget.ActionMenuView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:layout_anchorGravity="bottom|left">
+
+        <TextView
+            android:id="@+id/action_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/contacts"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/menu_item_contacts"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:textColor="@color/blablaCampusWhite"
+            android:textSize="12sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/action_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/notifications"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="bottom"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/menu_item_notifications"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:textColor="@color/blablaCampusWhite"
+            android:textSize="12sp"
+            android:typeface="normal" />
+
+    </androidx.appcompat.widget.ActionMenuView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        app:backgroundTint="@color/blablaCampuspurple"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="8dip"
+        app:fabCradleVerticalOffset="5dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showRideCard"
+        android:src="@drawable/rides"
+        app:backgroundTint="@color/blablaCampusPurpleClear"
+        app:layout_anchor="@+id/bottom_app_bar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

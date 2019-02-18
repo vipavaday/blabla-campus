@@ -6,22 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.security.utils.AccessDeniedHandlerFactory;
-import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
-public class DriverRidesFragment extends AuthFragment {
-
-    private static DriverRidesFragment fragment;
-
-
-    public DriverRidesFragment() {
-        super();
-        setAuth(true);
-        setAccessDeniedHandler(AccessDeniedHandlerFactory.getHandler(RidesFragment.ACCESS_DENIED_HANDLER));
-    }
+public class HomeFragment extends Fragment {
 
     @Nullable
     @Override
@@ -29,7 +19,7 @@ public class DriverRidesFragment extends AuthFragment {
 
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View driverRidesView = inflater.inflate(R.layout.fragment_driver_rides, container, false);
+        View driverRidesView = inflater.inflate(R.layout.fragment_home, container, false);
 
         return driverRidesView;
     }

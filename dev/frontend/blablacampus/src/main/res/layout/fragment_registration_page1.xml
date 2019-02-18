@@ -32,7 +32,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/cancel_mdpi"
+                android:src="@drawable/cancel"
                 android:layout_alignParentRight="true"/>
 
         </RelativeLayout>
@@ -111,12 +111,12 @@
                     android:hint="Mot de passe"
                     style="@style/connexionInput"/>
 
-                <ImageView
+               <!-- <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/password_eye_ldpi"
+                    android:src="@drawable/password_eye"
                     android:layout_gravity="right|center"
-                    android:layout_marginRight="@dimen/margin_10"/>
+                    android:layout_marginRight="@dimen/margin_10"/>-->
 
             </FrameLayout>
 

@@ -16,6 +16,13 @@
     <string name="driver_rides_starting_point">Départ</string>
     <string name="driver_rides_endpoint">Arrivée</string>
     <string name="ride">Ride</string>
+    <string name="connection">Connexion</string>
+    <string name="cancel">Annuler</string>
+    <string name="subscribe_btn">S\'inscrire</string>
+    <string name="forgotten_pwd_msg">J\'ai oublié mon mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="pseudo_hint">Pseudo</string>
+    <string name="password">Mot de passe</string>
 
 
 </resources>

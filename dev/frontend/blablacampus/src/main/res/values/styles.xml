@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents">-->
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -12,10 +12,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
-    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
-
-    <!-- Toolbar styles-->
 
 
     <!--Tabs styles-->
@@ -29,7 +25,7 @@
 
     <style name="homeText">
         <item name="android:textSize">75dp</item>
-        <item name="android:textColor">@color/blablaCampuspurple</item>
+        <item name="android:textColor">@color/blablaCampusPurpleClear</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/continuo</item>
         <item name="android:textAlignment">center</item>
@@ -133,6 +129,25 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@drawable/bg_blue_border_purple</item>
+    </style>
+
+
+
+
+    <style name="outlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="strokeColor">@color/colorOnSurface</item>
+        <item name="strokeWidth">1.5dp</item>
+    </style>
+
+    <style name="outlinedInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorOnSurface</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:layout_height">50dp</item>
     </style>
 
 </resources>

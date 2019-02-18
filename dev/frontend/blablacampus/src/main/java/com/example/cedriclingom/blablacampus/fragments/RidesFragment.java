@@ -1,21 +1,23 @@
-package com.example.cedriclingom.blablacampus.activities;
+package com.example.cedriclingom.blablacampus.fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.fragments.DriverRidesFragment;
-import com.example.cedriclingom.blablacampus.fragments.PassengerRidesFragment;
 import com.example.cedriclingom.blablacampus.security.utils.AccessDeniedHandlerFactory;
 import com.example.cedriclingom.blablacampus.security.utils.AuthEnabledFragmentAdapter;
-import com.example.cedriclingom.blablacampus.security.utils.AuthEnabledFragmentChangeListener;
 import com.example.cedriclingom.blablacampus.security.utils.AuthEnabledViewPager;
+import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class PathActivity extends BlablaCampusActivity {
-
+public class RidesFragment extends Fragment {
 
     private AuthEnabledViewPager authEnabledViewPager;
 
@@ -23,22 +25,20 @@ public class PathActivity extends BlablaCampusActivity {
 
     public static final String ACCESS_DENIED_HANDLER = "Rides_Handler";
 
-
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
+        super.onCreateView(inflater, container, savedInstanceState);
 
-        setBottomAppBar(findViewById(R.id.bottom_app_bar));
-        setSupportActionBar(getBottomAppBar());
-        setContentView(R.layout.activity_path);
+        View bottomAppBarCL = inflater.inflate(R.layout.fragment_rides, container, false);
 
-        ViewPager vp = findViewById(R.id.ridesCardViewpager);
+        ViewPager vp = bottomAppBarCL.findViewById(R.id.ridesCardViewpager);
 
         authEnabledViewPager = new AuthEnabledViewPager(vp);
         AccessDeniedHandlerFactory.addAccessDeniedHandler(ACCESS_DENIED_HANDLER, authEnabledViewPager);
 
-        AuthEnabledFragmentAdapter adp = new AuthEnabledFragmentAdapter(getSupportFragmentManager(), this) {
+        AuthEnabledFragmentAdapter adp = new AuthEnabledFragmentAdapter(getChildFragmentManager(), getContext()) {
 
             @Override
             public void initContent() {
@@ -49,17 +49,9 @@ public class PathActivity extends BlablaCampusActivity {
 
         authEnabledViewPager.setAdapter(adp);
 
-
-
-        tabLayout = findViewById(R.id.tabs);
+        tabLayout = bottomAppBarCL.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(authEnabledViewPager.getViewPager());
+
+        return bottomAppBarCL;
     }
-
-    public void closeRidesCard(View view) {
-
-        this.finish();
-
-    }
-
-
 }

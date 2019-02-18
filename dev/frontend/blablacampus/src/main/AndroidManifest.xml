@@ -20,22 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activities.AuthentificationActivity"
             android:label="Authentification"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
             android:name=".activities.RegistrationActivity"
             android:label="Registration"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".activities.PwdForgottenActivity"
             android:label="PasswordForgotten"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activities.PathActivity"
-            android:label="@string/title_activity_path"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

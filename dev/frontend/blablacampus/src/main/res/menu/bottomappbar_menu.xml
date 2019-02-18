@@ -4,13 +4,15 @@
 
     <item
         android:id="@+id/app_bar_contacts"
-        android:icon="@drawable/contacts"
-        android:title="@string/menu_item_contacts"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_item_accueil"
+        app:actionLayout="@layout/action_accueil"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/accueil"/>
 
     <item
         android:id="@+id/app_bar_infos"
-        android:icon="@drawable/user_infos"
         android:title="@string/menu_item_infos"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always|withText"
+        app:actionLayout="@layout/action_infos"
+        android:icon="@drawable/user_infos" />
 </menu>
