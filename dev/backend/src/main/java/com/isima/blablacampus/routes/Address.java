@@ -15,63 +15,81 @@ public class Address {
 	@Column(name = "\"Id\"")
 	private int id;
 	
-	@Column(name = "\"RoadNb\"")
-	private int roadNumber;
+	@Column(name = "\"Longitude\"")
+	private double longitude;
 	
-	@Column(name = "\"RoadName\"")
-	private String roadName;
+	@Column(name = "\"Latitude\"")
+	private double latitude;
 	
-	@Column(name = "\"ZIPCode\"")
-	private int zipCode;
+	@Column(name = "\"Address\"")
+	private String Address;
 	
-	@Column(name = "\"City\"")
-	private String city;
 	
 	
 	public Address() {
 	
 	}
-	
+
+
+	public Address(double longitude, double latitude, String Address) {
+		super();
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.Address = Address;
+	}
+
+
+
+
 
 	public int getId() {
 		return id;
 	}
 
+
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+
+
+	public double getLatitude() {
+		return latitude;
+	}
+
+
+
+	public String getAddress() {
+		return Address;
+	}
+
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	public int getRoadNumber() {
-		return roadNumber;
+
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
 	}
 
-	public void setRoadNumber(int roadNumber) {
-		this.roadNumber = roadNumber;
+
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
 	}
 
-	public String getRoadName() {
-		return roadName;
-	}
 
-	public void setRoadName(String roadName) {
-		this.roadName = roadName;
-	}
 
-	public int getZipCode() {
-		return zipCode;
+	public void setLineAddress(String Address) {
+		this.Address = Address;
 	}
+	
 
-	public void setZipCode(int zipCode) {
-		this.zipCode = zipCode;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
+	
 	
 
 }

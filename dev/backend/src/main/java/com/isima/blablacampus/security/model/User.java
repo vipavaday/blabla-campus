@@ -119,6 +119,16 @@ public class User implements UserDetails {
 	public void setPicPath(String picPath) {
 		this.picPath = picPath;
 	}
+	
+	@JsonIgnore
+	public List<Ride> getSubmittedRides() {
+		return submittedRides;
+	}
+
+	public void setSubmittedRides(List<Ride> submittedRides) {
+		this.submittedRides = submittedRides;
+	}
+
 
 
 	public Integer getUserId() {
