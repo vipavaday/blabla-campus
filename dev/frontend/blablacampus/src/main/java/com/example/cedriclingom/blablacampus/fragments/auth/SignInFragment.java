@@ -6,9 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
+import com.example.cedriclingom.blablacampus.security.models.CredentialsDTO;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import com.google.android.material.textfield.TextInputEditText;
@@ -20,7 +21,7 @@ import cz.msebera.android.httpclient.Header;
 
 import static android.app.Activity.RESULT_OK;
 
-public class LoginFragment extends AuthFragment implements View.OnClickListener {
+public class SignInFragment extends AuthFragment implements View.OnClickListener {
 
     private Button loginBtn;
 
@@ -34,7 +35,7 @@ public class LoginFragment extends AuthFragment implements View.OnClickListener 
 
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View loginFragment = inflater.inflate(R.layout.fragment_auth_login, container, false);
+        View loginFragment = inflater.inflate(R.layout.fragment_auth_sign_in, container, false);
 
         return loginFragment;
     }
@@ -58,9 +59,9 @@ public class LoginFragment extends AuthFragment implements View.OnClickListener 
     @Override
     public void onClick(View v) {
 
-        ConnectionModel connectionModel = new ConnectionModel(emailInput.getText().toString(), pwdInput.getText().toString());
+        CredentialsDTO credentialsDTO = new CredentialsDTO(emailInput.getText().toString(), pwdInput.getText().toString());
 
-        ConnectionService.doUserConnection(connectionModel, new AsyncHttpResponseHandler() {
+        ConnectionService.signIn(credentialsDTO, new AsyncHttpResponseHandler() {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
@@ -71,6 +72,8 @@ public class LoginFragment extends AuthFragment implements View.OnClickListener 
                     ConnectionService.setConnectionStatus(true);
 
                     getActivity().setResult(RESULT_OK);
+                    Toast connectionFailedToast  =  Toast.makeText(getActivity(), R.string.sign_in_success, Toast.LENGTH_SHORT);
+                    connectionFailedToast.show();
                     getActivity().finish();
                 }
             }
@@ -80,6 +83,8 @@ public class LoginFragment extends AuthFragment implements View.OnClickListener 
 
                 Log.i("loginFragment", "Request failed with status code: "+ statusCode);
                 ConnectionService.setConnectionStatus(false);
+                Toast connectionFailedToast  =  Toast.makeText(getActivity(), R.string.sign_in_failure, Toast.LENGTH_SHORT);
+                connectionFailedToast.show();
 
             }
         });

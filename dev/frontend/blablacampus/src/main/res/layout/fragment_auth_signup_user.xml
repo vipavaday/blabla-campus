@@ -1,0 +1,138 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blablaCampusWhite">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/avatarCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fitsSystemWindows="false">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/avatar_desc"
+                android:src="@drawable/avatar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/cancel_btn"
+                android:cropToPadding="false"
+                android:onClick="onCancel"
+                android:padding="20dp"
+                android:src="@drawable/add"
+                app:layout_anchor="@id/avatar"
+                app:layout_anchorGravity="top|right" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout android:id="@+id/signup_inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatarCL"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/firstname_hint"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blablaCampuspurple"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                style="@style/outlinedInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_firstname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blablaCampuspurple" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_firstname"
+                android:layout_marginTop="10dp"
+                android:hint="@string/lastname_hint"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blablaCampuspurple"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                style="@style/outlinedInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_lastname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blablaCampuspurple" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_lastname"
+                android:layout_marginTop="10dp"
+                android:hint="@string/phone_hint"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blablaCampuspurple"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                style="@style/outlinedInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_phone_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:textColor="@color/blablaCampuspurple" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_inputs"
+            android:padding="0dp">
+
+            <Button
+                style="@style/outlinedButton"
+                android:layout_width="@dimen/margin_205"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:onClick="showCredentialsPage"
+                android:text="@string/next_btn" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

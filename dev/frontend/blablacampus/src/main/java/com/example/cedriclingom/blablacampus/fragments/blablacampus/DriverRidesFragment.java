@@ -30,8 +30,8 @@ public class DriverRidesFragment extends AuthFragment {
 
         super.onStart();
 
-        /*FragmentTransaction ft = getFragmentManager().beginTransaction();*/
-        /*ft.detach(this).attach(this).commit();*/
+        /*FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.detach(this).attach(this).commit();*/
 
         if(ConnectionService.isConnected()){
 

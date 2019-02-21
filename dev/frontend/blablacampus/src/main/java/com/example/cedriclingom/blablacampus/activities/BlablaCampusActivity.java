@@ -64,21 +64,9 @@ public class BlablaCampusActivity extends BaseActivity {
         replaceContentAreaFragment(new HomeFragment());
     }
 
-
-
     @Override
     protected View getRootView() {
         return contentArea;
-    }
-
-    @Override
-    protected void onSoftKeyboardOpen() {
-
-    }
-
-    @Override
-    protected void onSoftKeyboardClose() {
-
     }
 
     @Override

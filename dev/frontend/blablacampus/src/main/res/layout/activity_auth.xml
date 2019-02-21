@@ -38,7 +38,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="4dp"
                 android:backgroundTint="@color/blablaCampusWhite"
-                android:contentDescription="@string/cancel"
+                android:contentDescription="@string/cancel_btn"
                 android:elevation="0dp"
                 android:onClick="onCancel"
                 android:src="@drawable/cancel"
@@ -49,7 +49,8 @@
         <Space android:id="@+id/spacer_top"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_below="@id/title_bar"/>
+            android:layout_below="@id/title_bar"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:id="@+id/app_name"
@@ -61,7 +62,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
             android:background="@color/blablaCampusWhite"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/app_name_part_1"
@@ -70,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/app_sub_name1"
-                android:textSize="65sp" />
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/app_name_part_2"
@@ -79,19 +80,35 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/app_sub_name2"
-                android:textSize="50sp" />
+                android:textSize="40sp" />
 
         </LinearLayout>
 
         <Space  android:id="@+id/spacer_bottom"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_below="@id/app_name"/>
+            android:layout_below="@id/app_name"
+            android:visibility="gone"/>
 
         <RelativeLayout android:id="@+id/auth_fragment_holder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/spacer_bottom"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/auth_fragment_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auth_fragment_holder">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:id="@+id/page_tab_strip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@color/blablaCampusPurpleClear" />
+
+        </androidx.viewpager.widget.ViewPager>
 
     </RelativeLayout>
 

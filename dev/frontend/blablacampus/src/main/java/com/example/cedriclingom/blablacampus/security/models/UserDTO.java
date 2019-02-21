@@ -1,6 +1,6 @@
 package com.example.cedriclingom.blablacampus.security.models;
 
-public class UserModel {
+public class UserDTO {
 
 
 }

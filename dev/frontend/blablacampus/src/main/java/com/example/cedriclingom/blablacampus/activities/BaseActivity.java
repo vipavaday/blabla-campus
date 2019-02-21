@@ -15,21 +15,25 @@ abstract class BaseActivity extends AppCompatActivity {
 
     private View rootView;
 
-    private Fragment currentFragment;
+    private AuthFragment currentFragment;
 
     private int fragmentContainer;
 
 
     protected abstract View getRootView();
-    protected abstract void onSoftKeyboardOpen();
-    protected abstract void onSoftKeyboardClose();
     protected abstract int getFragmentContainer();
+
+    protected void onSoftKeyboardOpen(){}
+    protected void onSoftKeyboardClose(){}
 
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
-        rootView = getRootView();
+        if((rootView = getRootView()) == null){
+            throw new UnsupportedOperationException("Classes that inherit from BaseActivity must" +
+                    " implement the getRootView method in such a way that it won't return null");
+        }
         initSoftKeyboardChangeListener();
     }
 
@@ -66,7 +70,7 @@ abstract class BaseActivity extends AppCompatActivity {
         });
     }
 
-    public Fragment getCurrentFragment() {
+    public AuthFragment getCurrentFragment() {
         return currentFragment;
     }
 }

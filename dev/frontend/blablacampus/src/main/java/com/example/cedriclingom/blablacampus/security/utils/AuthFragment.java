@@ -1,13 +1,12 @@
 package com.example.cedriclingom.blablacampus.security.utils;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.cedriclingom.blablacampus.activities.AuthentificationActivity;
+import com.example.cedriclingom.blablacampus.activities.SignInActivity;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
 
 import androidx.annotation.NonNull;
@@ -58,7 +57,7 @@ public abstract class AuthFragment extends Fragment {
 
     private  void showConnectionCard() {
 
-        Intent intent =  new Intent(this.getActivity(), AuthentificationActivity.class);
+        Intent intent =  new Intent(this.getActivity(), SignInActivity.class);
 
         startActivityForResult(intent, PICK_USER_REQUEST);
 
@@ -113,4 +112,6 @@ public abstract class AuthFragment extends Fragment {
 
     public abstract int getTitle();
 
+    public void onSoftKeyboardOpen(){}
+    public void onSoftKeyboardClose(){}
 }

@@ -1,6 +1,6 @@
 package com.example.cedriclingom.blablacampus.security.models;
 
-public class ConnectionModel {
+public class CredentialsDTO {
 
     private String email;
     private String password;
@@ -8,12 +8,12 @@ public class ConnectionModel {
 
 
 
-    public ConnectionModel(String email, String password) {
+    public CredentialsDTO(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
-    public ConnectionModel() {
+    public CredentialsDTO() {
         this(null, null);
     }
 

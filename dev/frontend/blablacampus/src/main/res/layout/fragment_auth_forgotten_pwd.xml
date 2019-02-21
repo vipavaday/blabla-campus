@@ -12,7 +12,7 @@
         style="@style/outlinedInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/pseudo_hint"
+        android:hint="@string/email_hint"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/blablaCampuspurple"
         app:hintAnimationEnabled="true"

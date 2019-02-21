@@ -14,17 +14,38 @@
     <string name="card_title_rides">Trajets</string>
     <string name="driver_rides_starting_point">Départ</string>
     <string name="driver_rides_endpoint">Arrivée</string>
-    <string name="ride">Ride</string>
-    <string name="cancel">Annuler</string>
+
+    <string name="cancel_btn">Annuler</string>
     <string name="subscribe_btn">S\'inscrire</string>
-    <string name="forgotten_pwd_msg">J\'ai oublié mon mot de passe</string>
-    <string name="login">Se connecter</string>
-    <string name="pseudo_hint">Pseudo</string>
-    <string name="password">Mot de passe</string>
+    <string name="forgotten_pwd_btn">J\'ai oublié mon mot de passe</string>
+    <string name="login_btn">Se connecter</string>
     <string name="recover_pwd_btn">Récupérer</string>
+    <string name="next_btn">Suivant</string>
+
     <string name="forgotten_pwd_title">Récupérer mon mot de passe</string>
     <string name="login_title">Connexion</string>
     <string name="home_title">Accueil</string>
+    <string name="signup_title">Inscription</string>
 
+    <string name="sign_in_failure">Echec de la connexion. Veillez réessayer.</string>
+    <string name="sign_in_success">Vous êtes maintenant connecté</string>
+
+    <string name="avatar_desc">Avatar</string>
+
+    <string name="lastname_hint">Nom</string>
+    <string name="firstname_hint">Prénom</string>
+    <string name="email_hint">Adresse mail</string>
+    <string name="phone_hint">Tel</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="password_confirm_hint">Confirmation du mot de passe</string>
+    <string name="route_desc">Itinéraire</string>
+    <string name="school_desc">Ecole</string>
+    <string name="school_name_hint">Nom de l\'école</string>
+    <string name="school_address_hint">Adresse</string>
+    <string name="school_city_hint">Ville</string>
+    <string name="signup_btn">S\'inscrire</string>
+    <string name="signup_user_title">Infos personnelles</string>
+    <string name="signup_school_title">Ecole</string>
+    <string name="signup_credentials_title">Identifiants</string>
 
 </resources>

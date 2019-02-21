@@ -26,20 +26,17 @@
         </activity>
 
         <activity
-            android:name=".activities.AuthentificationActivity"
+            android:name=".activities.SignInActivity"
             android:label="Authentification"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize"/>
 
         <activity
-            android:name=".activities.RegistrationActivity"
+            android:name=".activities.SignUpActivity"
             android:label="Registration"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
 
-        <activity
-            android:name=".activities.PwdForgottenActivity"
-            android:label="PasswordForgotten"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -9,25 +9,18 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Space;
 import android.widget.TextView;
-import android.widget.Button;
-import android.widget.EditText;
-
-import cz.msebera.android.httpclient.Header;
-import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
-import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.fragments.auth.ForgottenPwdFragment;
-import com.example.cedriclingom.blablacampus.fragments.auth.LoginFragment;
+import com.example.cedriclingom.blablacampus.fragments.auth.SignInFragment;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
+import com.google.android.material.tabs.TabLayout;
 
 import androidx.core.content.ContextCompat;
 
-public class AuthentificationActivity extends BaseActivity {
+public class SignInActivity extends BaseActivity {
 
     private ScrollView contentView;
-
 
     private LinearLayout appName;
 
@@ -44,7 +37,7 @@ public class AuthentificationActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_authentification);
+        setContentView(R.layout.activity_auth);
 
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -59,8 +52,8 @@ public class AuthentificationActivity extends BaseActivity {
         spacerTop = findViewById(R.id.spacer_top);
         spacerBottom = findViewById(R.id.spacer_bottom);
 
-
-        replaceContentAreaFragment(new LoginFragment());
+        replaceContentAreaFragment(new SignInFragment());
+        onSoftKeyboardClose();
     }
 
     @Override
@@ -100,7 +93,7 @@ public class AuthentificationActivity extends BaseActivity {
      */
     public void showRegistrationGraphicInterface(View view){
 
-        Intent intent = new Intent(this, RegistrationActivity.class);
+        Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
 
     }
@@ -119,7 +112,7 @@ public class AuthentificationActivity extends BaseActivity {
 
         if(getCurrentFragment() instanceof ForgottenPwdFragment){
 
-            replaceContentAreaFragment(new LoginFragment());
+            replaceContentAreaFragment(new SignInFragment());
 
         }else {
             finish();
@@ -128,7 +121,12 @@ public class AuthentificationActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        finish();
+
+        if(getCurrentFragment() instanceof SignInFragment) {
+            finish();
+        }else{
+            replaceContentAreaFragment(new SignInFragment());
+        }
     }
 
     @Override
@@ -136,9 +134,5 @@ public class AuthentificationActivity extends BaseActivity {
 
         super.replaceContentAreaFragment(f);
         titleBarText.setText(f.getTitle());
-    }
-
-    public void connection(View v){
-
     }
 }
