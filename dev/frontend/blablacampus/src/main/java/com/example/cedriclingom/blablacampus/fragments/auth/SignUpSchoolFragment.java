@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.cedriclingom.blablacampus.BuildConfig;
 import com.example.cedriclingom.blablacampus.R;
 import com.example.cedriclingom.blablacampus.databinding.FragmentAuthSignupSchoolBinding;
 import com.example.cedriclingom.blablacampus.security.viewmodel.SignUpViewModel;
@@ -27,7 +28,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 public class SignUpSchoolFragment extends FormFragment {
 
-    private static final String API_KEY = "AIzaSyB78yuEKK9VTtmTx2WoWcYvT3kBZat2X0A";
+    private static final String API_KEY = BuildConfig.GoogleApiKey;
 
     private ImageView schoolLogo;
     private Button signUpBtn;

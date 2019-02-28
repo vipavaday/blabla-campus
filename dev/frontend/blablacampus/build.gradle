@@ -25,6 +25,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "GoogleApiKey", google_api_key
+            resValue 'string', "google_api_key", google_api_key
+        }
+        debug{
+            buildConfigField 'String', "GoogleApiKey", google_api_key
+            resValue 'string', "google_api_key", google_api_key
         }
     }
     buildToolsVersion '28.0.3'
@@ -53,4 +59,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'com.google.guava:guava:27.0.1-android'
     implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

@@ -11,75 +11,96 @@
         android:layout_height="match_parent"
         android:background="@drawable/bordersubitem1"
         android:paddingBottom="@dimen/margin_30"
-        app:cardBackgroundColor="@color/blablaCampusWhite" >
+        app:cardBackgroundColor="@color/blablaCampusWhite"
+        tools:layout_editor_absoluteY="602dp">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="15dp">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:contentDescription="@string/route_desc"
-                android:padding="@dimen/card_padding"
-                android:src="@drawable/ride_arrow" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_weight="4">
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="80">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/route_desc"
+                    android:padding="@dimen/card_padding"
+                    android:src="@drawable/ride_arrow" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:hint="@string/driver_rides_starting_point"
-                    android:paddingLeft="10dp"
-                    android:textColorHint="@color/blablaCampuspurple"
-                    app:boxBackgroundColor="@color/blablaCampusWhite"
-                    app:boxBackgroundMode="outline"
-                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
-                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
-                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
-                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
-                    app:boxStrokeColor="@color/blablaCampuspurple"
-                    app:boxStrokeWidth="2dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80">
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/outlinedInput"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColor="@color/blablaCampuspurple" />
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:hint="@string/driver_rides_starting_point"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:boxStrokeColor="@color/blablaCampuspurple"
+                        app:boxStrokeWidth="2dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:drawableEnd="@drawable/place"
+                            android:inputType="textPostalAddress"
+                            android:paddingStart="25dp"
+                            android:paddingEnd="25dp"
+                            android:textColor="@color/blablaCampuspurple" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:hint="@string/driver_rides_endpoint"
-                    android:paddingLeft="10dp"
-                    android:textColorHint="@color/blablaCampuspurple"
-                    app:boxBackgroundColor="@color/blablaCampusWhite"
-                    app:boxBackgroundMode="outline"
-                    app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
-                    app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
-                    app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
-                    app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
-                    app:boxStrokeColor="@color/blablaCampuspurple"
-                    app:boxStrokeWidth="2dp">
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/outlinedInput"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColor="@color/blablaCampuspurple" />
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:hint="@string/driver_rides_endpoint"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:boxStrokeColor="@color/blablaCampuspurple"
+                        app:boxStrokeWidth="2dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:drawableEnd="@drawable/place"
+                            android:inputType="textPostalAddress"
+                            android:paddingStart="25dp"
+                            android:paddingEnd="25dp"
+                            android:textColor="@color/blablaCampuspurple" />
 
-            </RelativeLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_weight="6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
