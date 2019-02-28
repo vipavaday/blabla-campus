@@ -4,11 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorOnSurface">#26132E</color>
     <color name="colorAccent">#26132E</color>
-    <color name="colorOnPrimary">#26132E</color>
-    <color name="colorBorderActivity">#0000e6</color>
     <color name="blablaCampuspurple">#26132E</color>
     <color name="blablaCampusBlue">#146AA6</color>
     <color name="blablaCampusPurpleClear">#3C1E48</color>
     <color name="blablaCampusWhite">#FFFFFF</color>
-    <color name="blablaCampusCardBackground">#DFDFDF</color>
 </resources>

@@ -15,17 +15,14 @@ public class Address {
 	@Column(name = "\"Id\"")
 	private int id;
 	
-	@Column(name = "\"RoadNb\"")
-	private int roadNumber;
+	@Column(name = "\"Longitude\"")
+	private double longitude;
 	
-	@Column(name = "\"RoadName\"")
-	private String roadName;
+	@Column(name = "\"Latitude\"")
+	private double latitude;
 	
-	@Column(name = "\"ZIPCode\"")
-	private int zipCode;
-	
-	@Column(name = "\"City\"")
-	private String city;
+	@Column(name = "\"Address\"")
+	private String address;
 	
 	
 	public Address() {
@@ -41,37 +38,34 @@ public class Address {
 		this.id = id;
 	}
 
-	public int getRoadNumber() {
-		return roadNumber;
+
+	public double getLongitude() {
+		return longitude;
 	}
 
-	public void setRoadNumber(int roadNumber) {
-		this.roadNumber = roadNumber;
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
 	}
 
-	public String getRoadName() {
-		return roadName;
+
+	public double getLatitude() {
+		return latitude;
 	}
 
-	public void setRoadName(String roadName) {
-		this.roadName = roadName;
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
 	}
 
-	public int getZipCode() {
-		return zipCode;
+
+	public String getAddress() {
+		return address;
 	}
 
-	public void setZipCode(int zipCode) {
-		this.zipCode = zipCode;
-	}
 
-	public String getCity() {
-		return city;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-	
 
 }

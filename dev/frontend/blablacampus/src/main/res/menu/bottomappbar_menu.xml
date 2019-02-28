@@ -3,14 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/app_bar_contacts"
         android:title="@string/home_title"
         app:actionLayout="@layout/action_accueil"
         app:showAsAction="ifRoom|withText"
         android:icon="@drawable/accueil"/>
 
     <item
-        android:id="@+id/app_bar_infos"
         android:title="@string/menu_item_infos"
         app:showAsAction="always|withText"
         app:actionLayout="@layout/action_infos"

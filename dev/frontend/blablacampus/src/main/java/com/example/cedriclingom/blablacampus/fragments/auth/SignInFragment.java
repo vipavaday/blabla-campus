@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.security.models.CredentialsDTO;
-import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.example.cedriclingom.blablacampus.security.model.dto.CredentialsDTO;
+import com.example.cedriclingom.blablacampus.security.services.ConnectionService;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import com.google.android.material.textfield.TextInputEditText;
 import com.loopj.android.http.AsyncHttpResponseHandler;

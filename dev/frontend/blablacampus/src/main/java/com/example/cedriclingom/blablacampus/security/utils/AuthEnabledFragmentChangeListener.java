@@ -1,7 +1,5 @@
 package com.example.cedriclingom.blablacampus.security.utils;
 
-import android.util.Log;
-
 import java.util.List;
 
 import androidx.viewpager.widget.ViewPager;
@@ -42,10 +40,8 @@ public class AuthEnabledFragmentChangeListener implements ViewPager.OnPageChange
         if(pages.get(position).isAuthentificated()) {
 
             pages.get(position).onAuthEnabledPageSelected();
-
-            curPage = position;
         }
-
+        curPage = position;
     }
 
     @Override

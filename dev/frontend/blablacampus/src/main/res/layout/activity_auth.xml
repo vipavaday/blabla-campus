@@ -1,116 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:id="@+id/content_view"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:background="@color/blablaCampusWhite"
-    android:fillViewport="true">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <RelativeLayout
+    <ScrollView android:id="@+id/content_view"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@color/blablaCampusWhite"
+        android:fillViewport="true">
 
         <RelativeLayout
-            android:id="@+id/title_bar"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:background="@color/blablaCampusWhite"
-            android:elevation="4dp"
-            android:paddingStart="@dimen/margin_10"
-            android:paddingTop="10dp"
-            android:paddingEnd="0dp">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/title_bar_text"
-                style="@style/connexionText"
+            <RelativeLayout
+                android:id="@+id/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/blablaCampusWhite"
+                android:elevation="4dp"
+                android:paddingStart="@dimen/margin_10"
+                android:paddingTop="10dp"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    android:id="@+id/title_bar_text"
+                    style="@style/connexionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="viewStart" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/title_bar_text"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/blablaCampusWhite"
+                    android:contentDescription="@string/cancel_btn"
+                    android:elevation="0dp"
+                    android:onClick="onCancel"
+                    android:src="@drawable/cancel"
+                    android:tint="@color/blablaCampuspurple" />
+
+            </RelativeLayout>
+
+            <Space android:id="@+id/spacer_top"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/title_bar"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:textAlignment="viewStart" />
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@+id/spacer_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/blablaCampusWhite"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/app_name_part_1"
+                    style="@style/AuthBlaBlaCampusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_sub_name1"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/app_name_part_2"
+                    style="@style/AuthBlaBlaCampusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_sub_name2"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <Space  android:id="@+id/spacer_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/app_name"
+                android:visibility="gone"/>
+
+            <RelativeLayout android:id="@+id/auth_fragment_holder"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/title_bar_text"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="@color/blablaCampusWhite"
-                android:contentDescription="@string/cancel_btn"
-                android:elevation="0dp"
-                android:onClick="onCancel"
-                android:src="@drawable/cancel"
-                android:tint="@color/blablaCampuspurple" />
+                android:layout_below="@id/spacer_bottom"/>
+
+            <com.example.cedriclingom.blablacampus.security.utils.AuthEnabledViewPager
+                android:id="@+id/auth_fragment_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/auth_fragment_holder">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/bullet_tab_layout"
+                    android:clickable="false"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@android:color/transparent"
+                    app:tabTextColor="@android:color/transparent"
+                    app:tabBackground="@drawable/bullet_tab_selector"
+                    app:tabIndicatorHeight="0dp" />
+
+            </com.example.cedriclingom.blablacampus.security.utils.AuthEnabledViewPager>
 
         </RelativeLayout>
 
-        <Space android:id="@+id/spacer_top"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_below="@id/title_bar"
-            android:visibility="gone"/>
-
-        <LinearLayout
-            android:id="@+id/app_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignWithParentIfMissing="false"
-            android:layout_below="@+id/spacer_top"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="5dp"
-            android:background="@color/blablaCampusWhite"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/app_name_part_1"
-                style="@style/AuthBlaBlaCampusText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/app_sub_name1"
-                android:textSize="40sp" />
-
-            <TextView
-                android:id="@+id/app_name_part_2"
-                style="@style/AuthBlaBlaCampusText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/app_sub_name2"
-                android:textSize="40sp" />
-
-        </LinearLayout>
-
-        <Space  android:id="@+id/spacer_bottom"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_below="@id/app_name"
-            android:visibility="gone"/>
-
-        <RelativeLayout android:id="@+id/auth_fragment_holder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/spacer_bottom"/>
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/auth_fragment_vp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/auth_fragment_holder">
-
-            <androidx.viewpager.widget.PagerTabStrip
-                android:id="@+id/page_tab_strip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:textColor="@color/blablaCampusPurpleClear" />
-
-        </androidx.viewpager.widget.ViewPager>
-
-    </RelativeLayout>
-
-
-</ScrollView>
+    </ScrollView>
+</layout>

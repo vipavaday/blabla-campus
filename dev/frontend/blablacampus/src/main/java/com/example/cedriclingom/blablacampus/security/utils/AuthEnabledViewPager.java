@@ -1,38 +1,67 @@
 package com.example.cedriclingom.blablacampus.security.utils;
 
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+
+import androidx.annotation.NonNull;
 import androidx.viewpager.widget.ViewPager;
 
-public class AuthEnabledViewPager implements IAccessAuthHandler {
+public class AuthEnabledViewPager extends ViewPager implements IAccessAuthHandler {
 
-
-    private ViewPager vp;
     private AuthEnabledFragmentChangeListener changeListener;
+    private boolean locked;
 
-    public AuthEnabledViewPager(ViewPager vp) {
-
-        this.vp = vp;
+    public AuthEnabledViewPager(@NonNull Context context) {
+        super(context);
+        locked = true;
     }
 
+    public AuthEnabledViewPager(@NonNull Context context, AttributeSet attributes) {
+        super(context, attributes);
+        locked = true;
+    }
 
     @Override
     public void onAccessDenied() {
 
-        vp.setCurrentItem(changeListener.getLastPage());
+        setCurrentItem(changeListener.getLastPage());
     }
 
     @Override
-    public void onAccessAccepted() {
-        vp.setCurrentItem(changeListener.getCurrentPage());
+    public void onAccessGranted() {
+        setCurrentItem(changeListener.getCurrentPage());
     }
 
-    public ViewPager getViewPager() {
-        return vp;
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent event) {
+        return locked ? false : super.onInterceptTouchEvent(event);
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return locked ? false : super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean performClick() {
+        return locked ? false : super.performClick();
+    }
+
+
 
     public void  setAdapter(AuthEnabledFragmentAdapter adp){
 
-        vp.setAdapter(adp);
+        super.setAdapter(adp);
         changeListener = new AuthEnabledFragmentChangeListener(adp);
-        vp.addOnPageChangeListener(changeListener);
+        addOnPageChangeListener(changeListener);
+    }
+
+    public boolean isLocked() {
+        return locked;
+    }
+
+    public void setLocked(boolean locked) {
+        this.locked = locked;
     }
 }

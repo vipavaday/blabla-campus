@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.activities.SignInActivity;
-import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.example.cedriclingom.blablacampus.security.services.ConnectionService;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -57,7 +57,7 @@ public abstract class AuthFragment extends Fragment {
 
     private  void showConnectionCard() {
 
-        Intent intent =  new Intent(this.getActivity(), SignInActivity.class);
+        Intent intent =  new Intent(this.getContext(), SignInActivity.class);
 
         startActivityForResult(intent, PICK_USER_REQUEST);
 
@@ -72,7 +72,7 @@ public abstract class AuthFragment extends Fragment {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
 
-                this.accessAuthHandler.onAccessAccepted();
+                this.accessAuthHandler.onAccessGranted();
 
             }else if(resultCode == RESULT_CANCELED){
 

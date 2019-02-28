@@ -6,31 +6,37 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
+import com.example.cedriclingom.blablacampus.databinding.FragmentAuthSignupUserBinding;
+import com.example.cedriclingom.blablacampus.security.viewmodel.SignUpViewModel;
+
+import java.util.Observable;
+import java.util.Observer;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.lifecycle.ViewModelProviders;
 
-
-public class SignUpUserFragment extends AuthFragment {
-
+public class SignUpUserFragment extends FormFragment {
 
     private CoordinatorLayout avatarCL;
-
+    private boolean validated = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_auth_signup_user, container, false);
+        FragmentAuthSignupUserBinding binding = FragmentAuthSignupUserBinding.inflate(inflater, container, false);
+        setViewModel(ViewModelProviders.of(getActivity()).get(SignUpViewModel.class));
+        binding.setModel((SignUpViewModel) getViewModel());
+
+        return binding.getRoot();
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
+        super.onViewCreated(view, savedInstanceState);
         avatarCL = getActivity().findViewById(R.id.avatarCL);
     }
 
@@ -40,9 +46,31 @@ public class SignUpUserFragment extends AuthFragment {
     }
 
     @Override
-    public void onSoftKeyboardOpen() { avatarCL.setVisibility(View.GONE); }
+    public void onSoftKeyboardOpen() {
+
+        if(avatarCL !=null){
+            avatarCL.setVisibility(View.GONE);
+        }
+    }
 
     @Override
-    public void onSoftKeyboardClose() { avatarCL.setVisibility(View.VISIBLE); }
+    public void onSoftKeyboardClose() {
 
+        if(avatarCL !=null){
+            avatarCL.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
+    void setupButtonClick() {
+
+        ((SignUpViewModel)getViewModel()).getUserConfirmObservable().observe(this, validated -> {
+
+            if (SignUpUserFragment.this.getFormValidatedListener() != null && (Boolean) validated != this.validated) {
+
+                SignUpUserFragment.this.getFormValidatedListener().onFormValidated();
+                this.validated = (Boolean) validated;
+            }
+        });
+    }
 }

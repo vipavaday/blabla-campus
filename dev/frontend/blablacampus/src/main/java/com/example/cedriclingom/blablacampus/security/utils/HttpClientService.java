@@ -18,14 +18,9 @@ public class HttpClientService {
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 
-
-
-
-
-
-
-
-
+    static {
+        client.setEnableRedirects(true);
+    }
 
 
     public static String getbaseUrl() {

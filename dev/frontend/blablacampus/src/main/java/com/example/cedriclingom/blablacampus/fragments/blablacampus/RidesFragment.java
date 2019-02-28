@@ -32,9 +32,7 @@ public class RidesFragment extends AuthFragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View ridesView = inflater.inflate(R.layout.fragment_rides, container, false);
-        ViewPager vp = ridesView.findViewById(R.id.ridesCardViewpager);
-
-        authEnabledViewPager = new AuthEnabledViewPager(vp);
+        authEnabledViewPager = ridesView.findViewById(R.id.ridesCardViewpager);
         AccessDeniedHandlerFactory.addAccessDeniedHandler(ACCESS_DENIED_HANDLER, authEnabledViewPager);
 
         AuthEnabledFragmentAdapter adp = new AuthEnabledFragmentAdapter(getChildFragmentManager(), getContext()) {
@@ -49,7 +47,7 @@ public class RidesFragment extends AuthFragment {
         authEnabledViewPager.setAdapter(adp);
 
         tabLayout = ridesView.findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(authEnabledViewPager.getViewPager());
+        tabLayout.setupWithViewPager(authEnabledViewPager);
 
         return ridesView;
     }

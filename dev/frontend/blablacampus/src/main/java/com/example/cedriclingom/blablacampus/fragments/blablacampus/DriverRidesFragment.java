@@ -6,13 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.example.cedriclingom.blablacampus.security.services.ConnectionService;
 import com.example.cedriclingom.blablacampus.security.utils.AccessDeniedHandlerFactory;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentTransaction;
 
 public class DriverRidesFragment extends AuthFragment {
 
@@ -30,11 +29,7 @@ public class DriverRidesFragment extends AuthFragment {
 
         super.onStart();
 
-        /*FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.detach(this).attach(this).commit();*/
-
         if(ConnectionService.isConnected()){
-
 
             System.out.println("I can get the routes!");
 

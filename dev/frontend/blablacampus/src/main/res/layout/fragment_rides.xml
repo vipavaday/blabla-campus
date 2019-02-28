@@ -56,13 +56,11 @@
                 app:tabTextColor="@color/blablaCampusWhite">
 
                 <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tab_passenger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tab_item_passager" />
 
                 <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tab_driver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tab_item_driver" />
@@ -71,14 +69,14 @@
 
             </com.google.android.material.tabs.TabLayout>
 
-            <androidx.viewpager.widget.ViewPager
+            <com.example.cedriclingom.blablacampus.security.utils.AuthEnabledViewPager
                 android:id="@+id/ridesCardViewpager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/tabs"
                 android:elevation="5dp">
 
-            </androidx.viewpager.widget.ViewPager>
+            </com.example.cedriclingom.blablacampus.security.utils.AuthEnabledViewPager>
 
         </RelativeLayout>
 

@@ -19,6 +19,11 @@ allprojects {
         google()
         jcenter()
     }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xmaxerrs" << "1000"
+        }
+    }
 }
 
 task clean(type: Delete) {

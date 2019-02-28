@@ -12,7 +12,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public abstract class AuthEnabledFragmentAdapter extends FragmentPagerAdapter {
 
     private Context context;
-
     private List<AuthFragment> childFragments;
 
 

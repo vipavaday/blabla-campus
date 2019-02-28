@@ -4,8 +4,6 @@
     <string name="app_sub_name2">Campus</string>
     <string name="title_activity_main">MainActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="title_activity_path">PathActivity</string>
     <string name="menu_item_contacts">Contacts</string>
     <string name="menu_item_notifications">Notifications</string>
     <string name="menu_item_infos">Mes infos</string>
@@ -47,5 +45,15 @@
     <string name="signup_user_title">Infos personnelles</string>
     <string name="signup_school_title">Ecole</string>
     <string name="signup_credentials_title">Identifiants</string>
+    <string name="error_invalid_phone">Numéro de téléphone invalide</string>
+    <string name="error_invalid_name">Minimum 3 caractères</string>
+    <string name="error_invalid_email">Adresse mail invalide</string>
+    <string name="error_invalid_pwd">Mot de passe invalide</string>
+    <string name="error_invalid_pwd_confirm">Mot de passe différent</string>
+    <string name="school_hint">Rechercher mon école</string>
+
+    <string name="account_created">Votre compte a bien été créé</string>
+    <string name="account_conflict">Adresse mail déjà utilisée</string>
+    <string name="account_invalid_data">Certains champs renseignés sont invalides</string>
 
 </resources>
