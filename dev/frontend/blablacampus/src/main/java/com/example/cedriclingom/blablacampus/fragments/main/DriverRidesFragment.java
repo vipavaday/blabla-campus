@@ -1,4 +1,4 @@
-package com.example.cedriclingom.blablacampus.fragments.blablacampus;
+package com.example.cedriclingom.blablacampus.fragments.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

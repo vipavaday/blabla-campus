@@ -1,7 +1,5 @@
 package com.example.cedriclingom.blablacampus.security.viewmodel;
 
-import android.content.Context;
-
 import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.databinding.BindingAdapter;

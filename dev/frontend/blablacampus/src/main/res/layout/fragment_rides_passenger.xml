@@ -9,99 +9,190 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bordersubitem1"
-        android:paddingBottom="@dimen/margin_30"
+        android:paddingBottom="16dp"
         app:cardBackgroundColor="@color/blablaCampusWhite"
+        app:cardElevation="0dp"
         tools:layout_editor_absoluteY="602dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/search_panel"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal"
-                android:paddingTop="15dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_weight="4">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    android:contentDescription="@string/route_desc"
-                    android:padding="@dimen/card_padding"
-                    android:src="@drawable/ride_arrow" />
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80">
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/outlinedInput"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:hint="@string/driver_rides_starting_point"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        app:boxStrokeColor="@color/blablaCampuspurple"
-                        app:boxStrokeWidth="2dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:drawableEnd="@drawable/place"
-                            android:inputType="textPostalAddress"
-                            android:paddingStart="25dp"
-                            android:paddingEnd="25dp"
-                            android:textColor="@color/blablaCampuspurple" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/outlinedInput"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:hint="@string/driver_rides_endpoint"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        app:boxStrokeColor="@color/blablaCampuspurple"
-                        app:boxStrokeWidth="2dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:drawableEnd="@drawable/place"
-                            android:inputType="textPostalAddress"
-                            android:paddingStart="25dp"
-                            android:paddingEnd="25dp"
-                            android:textColor="@color/blablaCampuspurple" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/map"
-                android:name="com.google.android.gms.maps.MapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-                app:layout_constraintVertical_weight="6" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintTop_toTopOf="parent">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/passenger_rides_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/radius_border_bottom"
+                    android:minHeight="25dp"
+                    android:visibility="visible">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/passenger_rides_search_collapse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="30dp"
+                        android:visibility="gone">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/route_inputs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_weight="80"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout"
+                                style="@style/outlinedInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/driver_rides_starting_point"
+                                app:boxStrokeColor="@color/blablaCampuspurple"
+                                app:boxStrokeWidth="2dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/textInputEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/place"
+                                    android:inputType="textPostalAddress"
+                                    android:textColor="@color/blablaCampuspurple" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout2"
+                                style="@style/outlinedInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:hint="@string/driver_rides_endpoint"
+                                app:boxStrokeColor="@color/blablaCampuspurple"
+                                app:boxStrokeWidth="2dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/place"
+                                    android:inputType="textPostalAddress"
+                                    android:textColor="@color/blablaCampuspurple" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/ride_hour"
+                                style="@style/outlinedInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:hint="@string/driver_rides_hour_hint"
+                                app:boxStrokeColor="@color/blablaCampuspurple"
+                                app:boxStrokeWidth="2dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_weight="2"
+                                app:layout_constraintStart_toEndOf="@id/ride_date"
+                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/ride_hour_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/calendar"
+                                    android:inputType="time"
+                                    android:textColor="@color/blablaCampuspurple" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/ride_date"
+                                style="@style/outlinedInput"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:hint="@string/driver_rides_date"
+                                app:boxStrokeColor="@color/blablaCampuspurple"
+                                app:boxStrokeWidth="2dp"
+                                app:layout_constraintEnd_toStartOf="@id/ride_hour"
+                                app:layout_constraintHorizontal_weight="3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/ride_date_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:drawableEnd="@drawable/calendar"
+                                    android:inputType="date"
+                                    android:textColor="@color/blablaCampuspurple" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <Button
+                            android:id="@+id/button"
+                            style="@style/outlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/ride_search"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/route_inputs" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/search_toggle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/search"
+                    android:baselineAlignBottom="false"
+                    android:contentDescription="@string/search_btn_desc"
+                    android:cropToPadding="false"
+                    android:elevation="7dp"
+                    android:scaleType="centerInside"
+                    app:layout_anchor="@id/passenger_rides_search"
+                    app:layout_anchorGravity="bottom|center_horizontal" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <fragment
+                android:id="@+id/ride_list"
+                android:name="com.example.cedriclingom.blablacampus.fragments.main.RideListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_panel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

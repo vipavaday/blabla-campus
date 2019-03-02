@@ -1,4 +1,4 @@
-package com.example.cedriclingom.blablacampus.fragments.blablacampus;
+package com.example.cedriclingom.blablacampus.fragments.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,6 @@ import com.google.android.material.tabs.TabLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.viewpager.widget.ViewPager;
 
 public class RidesFragment extends AuthFragment {
 

@@ -1,10 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">-->
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -41,8 +39,6 @@
     </style>
 
     <style name="outlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="strokeColor">@drawable/btn_outlined_selector</item>
         <item name="strokeWidth">2dp</item>
@@ -61,5 +57,11 @@
         <item name="android:layout_height">50dp</item>
     </style>
 
+    <style name="TimePickerTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="colorAccent">@color/blablaCampuspurple</item>
+        <item name="android:colorAccent">@color/blablaCampuspurple</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
 </resources>

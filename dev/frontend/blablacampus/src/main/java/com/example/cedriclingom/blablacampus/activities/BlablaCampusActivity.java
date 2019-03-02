@@ -1,7 +1,5 @@
 package com.example.cedriclingom.blablacampus.activities;
 
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,13 +9,12 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.fragments.blablacampus.HomeFragment;
-import com.example.cedriclingom.blablacampus.fragments.blablacampus.RidesFragment;
+import com.example.cedriclingom.blablacampus.fragments.main.HomeFragment;
+import com.example.cedriclingom.blablacampus.fragments.main.RidesFragment;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 
 public class BlablaCampusActivity extends BaseActivity {
 

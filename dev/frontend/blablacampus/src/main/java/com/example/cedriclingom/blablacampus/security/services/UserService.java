@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
-public interface BlablacampusService {
+public interface UserService {
 
     @POST("user/register")
     Call<UserBundleDTO> createUser(@Body UserBundleDTO user);

@@ -55,5 +55,20 @@
     <string name="account_created">Votre compte a bien été créé</string>
     <string name="account_conflict">Adresse mail déjà utilisée</string>
     <string name="account_invalid_data">Certains champs renseignés sont invalides</string>
+    <string name="driver_rides_date">Date</string>
+    <string name="driver_rides_hour_hint">Heure</string>
+    <string name="departure_time">Heure du départ</string>
+    <string name="ride_date">Date du trajet</string>
+    <string name="ride_search">Rechercher</string>
+    <string name="passenger_rides_search_title">Rechercher un trajet</string>
+    <string name="search_btn_desc">Rechercher un trajet</string>
+
+    <string name="route_tx_default">Riom - Cézeaux</string>
+    <string name="available_seats_nb_tx_default">3</string>
+    <string name="available_seats_tx_default">places</string>
+    <string name="date_tx_default">Aujourd\'hui à 16h</string>
+    <string name="duration_nb_tx_default">30</string>
+    <string name="duration_tx_default">min</string>
+    <string name="driver_tx_default">Cédric</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.cedriclingom.blablacampus.fragments.blablacampus;
+package com.example.cedriclingom.blablacampus.fragments.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,12 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
-public class BottomAppBarFragment extends Fragment {
+public class HomeFragment extends AuthFragment {
 
     @Nullable
     @Override
@@ -19,8 +19,13 @@ public class BottomAppBarFragment extends Fragment {
 
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View bottomAppBarCL = inflater.inflate(R.layout.fragment_bottom_app_bar, container, false);
+        View driverRidesView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        return bottomAppBarCL;
+        return driverRidesView;
+    }
+
+    @Override
+    public int getTitle() {
+        return R.string.home_title;
     }
 }
