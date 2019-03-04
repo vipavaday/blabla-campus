@@ -59,7 +59,8 @@
     <string name="driver_rides_hour_hint">Heure</string>
     <string name="departure_time">Heure du départ</string>
     <string name="ride_date">Date du trajet</string>
-    <string name="ride_search">Rechercher</string>
+    <string name="ride_search_btn">Rechercher</string>
+    <string name="ride_create_btn">Créer</string>
     <string name="passenger_rides_search_title">Rechercher un trajet</string>
     <string name="search_btn_desc">Rechercher un trajet</string>
 
@@ -70,5 +71,16 @@
     <string name="duration_nb_tx_default">30</string>
     <string name="duration_tx_default">min</string>
     <string name="driver_tx_default">Cédric</string>
+    <string name="avg_duration_tx">Durée moyenne :</string>
+    <string name="avg_duration_nb_tx">30</string>
+    <string name="avg_duration_unit_tx2">min</string>
+    <string name="day_mon">L</string>
+    <string name="day_tue">M</string>
+    <string name="day_wed">M</string>
+    <string name="day_thu">J</string>
+    <string name="day_fri">V</string>
+    <string name="day_sat">S</string>
+    <string name="day_sun">D</string>
+    <string name="route_nav_desc">nav</string>
 
 </resources>

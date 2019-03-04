@@ -4,27 +4,25 @@ import android.widget.TextView;
 
 import com.example.cedriclingom.blablacampus.R;
 
+import java.util.List;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class RideViewHolder extends RecyclerView.ViewHolder {
+public class RouteViewHolder extends RecyclerView.ViewHolder {
 
     private ConstraintLayout layout;
     private TextView route;
-    private TextView availableSeats;
-    private TextView date;
-    private TextView driver;
     private TextView duration;
+    private ConstraintLayout activeDays;
 
-    public RideViewHolder(ConstraintLayout v) {
+    public RouteViewHolder(ConstraintLayout v) {
         super(v);
-        layout = v;
 
+        layout = v;
         route = v.findViewById(R.id.route_tx);
-        availableSeats = v.findViewById(R.id.available_seats_tx);
-        date = v.findViewById(R.id.avg_duration_tx);
-        driver = v.findViewById(R.id.driver_tx);
         duration = v.findViewById(R.id.duration_tx);
+        activeDays = v.findViewById(R.id.active_days);
     }
 
     public ConstraintLayout getLayout() {
@@ -37,18 +35,6 @@ public class RideViewHolder extends RecyclerView.ViewHolder {
 
     public TextView getRoute() {
         return route;
-    }
-
-    public TextView getAvailableSeats() {
-        return availableSeats;
-    }
-
-    public TextView getDate() {
-        return date;
-    }
-
-    public TextView getDriver() {
-        return driver;
     }
 
     public TextView getDuration() {

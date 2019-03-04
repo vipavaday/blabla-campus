@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <!--Panel de recherche trajet passager étendu-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,137 +35,17 @@
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/radius_border_bottom"
                     android:minHeight="25dp"
+                    android:paddingBottom="30dp"
                     android:visibility="visible">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <fragment
                         android:id="@+id/passenger_rides_search_collapse"
+                        android:name="com.example.cedriclingom.blablacampus.fragments.main.RideFormFragment"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingBottom="30dp"
-                        android:visibility="gone">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/route_inputs"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_weight="80"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent">
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/textInputLayout"
-                                style="@style/outlinedInput"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/driver_rides_starting_point"
-                                app:boxStrokeColor="@color/blablaCampuspurple"
-                                app:boxStrokeWidth="2dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/textInputEditText"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:drawableEnd="@drawable/place"
-                                    android:inputType="textPostalAddress"
-                                    android:textColor="@color/blablaCampuspurple" />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/textInputLayout2"
-                                style="@style/outlinedInput"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:hint="@string/driver_rides_endpoint"
-                                app:boxStrokeColor="@color/blablaCampuspurple"
-                                app:boxStrokeWidth="2dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:drawableEnd="@drawable/place"
-                                    android:inputType="textPostalAddress"
-                                    android:textColor="@color/blablaCampuspurple" />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/ride_hour"
-                                style="@style/outlinedInput"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:hint="@string/driver_rides_hour_hint"
-                                app:boxStrokeColor="@color/blablaCampuspurple"
-                                app:boxStrokeWidth="2dp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_weight="2"
-                                app:layout_constraintStart_toEndOf="@id/ride_date"
-                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/ride_hour_text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:drawableEnd="@drawable/calendar"
-                                    android:inputType="time"
-                                    android:textColor="@color/blablaCampuspurple" />
-
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/ride_date"
-                                style="@style/outlinedInput"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:hint="@string/driver_rides_date"
-                                app:boxStrokeColor="@color/blablaCampuspurple"
-                                app:boxStrokeWidth="2dp"
-                                app:layout_constraintEnd_toStartOf="@id/ride_hour"
-                                app:layout_constraintHorizontal_weight="3"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/ride_date_text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:drawableEnd="@drawable/calendar"
-                                    android:inputType="date"
-                                    android:textColor="@color/blablaCampuspurple" />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <Button
-                            android:id="@+id/button"
-                            style="@style/outlinedButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="@string/ride_search"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/route_inputs" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

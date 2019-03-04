@@ -2,23 +2,78 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <!--Panel création  trajet driver réduit-->
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bordersubitem1"
-        android:paddingBottom="@dimen/margin_30">
+        android:paddingBottom="16dp"
+        app:cardBackgroundColor="@color/blablaCampusWhite"
+        app:cardElevation="0dp"
+        tools:layout_editor_absoluteY="602dp">
 
-        <Button
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="testUserConnection"
-            android:text="Button" />
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/search_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/passenger_rides_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/radius_border_bottom"
+                    android:minHeight="25dp"
+                    android:paddingBottom="30dp"
+                    android:visibility="visible">
+
+                    <fragment
+                        android:id="@+id/passenger_rides_search_collapse"
+                        android:name="com.example.cedriclingom.blablacampus.fragments.main.RideFormFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/search_toggle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/add_filled"
+                    android:baselineAlignBottom="false"
+                    android:contentDescription="@string/search_btn_desc"
+                    android:cropToPadding="false"
+                    android:elevation="7dp"
+                    android:scaleType="centerInside"
+                    app:layout_anchor="@id/passenger_rides_search"
+                    app:layout_anchorGravity="bottom|center_horizontal" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <fragment
+                android:id="@+id/route_list"
+                android:name="com.example.cedriclingom.blablacampus.fragments.main.RouteListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_panel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

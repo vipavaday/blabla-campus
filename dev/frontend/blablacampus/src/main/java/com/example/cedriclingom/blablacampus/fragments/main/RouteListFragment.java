@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cedriclingom.blablacampus.R;
-import com.example.cedriclingom.blablacampus.main.model.RideDTO;
+import com.example.cedriclingom.blablacampus.main.model.RouteDTO;
 import com.example.cedriclingom.blablacampus.main.services.RideRepository;
+import com.example.cedriclingom.blablacampus.main.services.RouteRepository;
 import com.example.cedriclingom.blablacampus.main.utils.RideListAdapter;
+import com.example.cedriclingom.blablacampus.main.utils.RouteListAdapter;
 import com.example.cedriclingom.blablacampus.security.utils.AuthFragment;
 
 import java.util.LinkedList;
@@ -19,39 +21,39 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class RideListFragment extends AuthFragment {
+public class RouteListFragment extends AuthFragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-    private List<RideDTO> rides;
+    private List<RouteDTO> routes;
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_rides_list,container, false);
+        return inflater.inflate(R.layout.fragment_routes_list, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        recyclerView = getView().findViewById(R.id.ride_list);
+        recyclerView = getView().findViewById(R.id.route_list);
         recyclerView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-        rides = new LinkedList<>();
-        mAdapter = new RideListAdapter(rides);
+        routes = new LinkedList<>();
+        mAdapter = new RouteListAdapter(routes);
         recyclerView.setAdapter(mAdapter);
 
-        RideRepository.getRidesForRoute("Clermont Auvergne Métropole", "Fac").subscribe(rideList -> {
+        RouteRepository.getUserRoutes("victor.pavaday@gmail.com").subscribe(routeList -> {
 
-            rides.addAll(rideList);
+            routes.addAll(routeList);
             mAdapter.notifyDataSetChanged();
-        }).dispose();
+        });
     }
 
     @Override
