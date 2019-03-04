@@ -9,6 +9,8 @@ import com.isima.blablacampus.routes.Route;
 
 public interface IRouteService {
 	
-	public List<Route> loadUserRoutes(List<Ride> rides);
+	public void saveRoute(Route route);
+
+	public List<Route> loadUserRoutes(String userName);
 
 }

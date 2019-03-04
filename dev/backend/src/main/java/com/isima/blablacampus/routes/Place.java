@@ -3,6 +3,7 @@ package com.isima.blablacampus.routes;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -13,9 +14,9 @@ import javax.persistence.Table;
 public class Place {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "\"Id\"")
-	private int placeId;
+	private Integer placeId;
 	
 	@Column(name = "\"Name\"")
 	private String name;
@@ -36,11 +37,11 @@ public class Place {
 	}
 	
 
-	public int getPlaceId() {
+	public Integer getPlaceId() {
 		return placeId;
 	}
 
-	public void setPlaceId(int placeId) {
+	public void setPlaceId(Integer placeId) {
 		this.placeId = placeId;
 	}
 

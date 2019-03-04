@@ -1,5 +1,6 @@
 package com.isima.blablacampus.security.services;
 
+import com.isima.blablacampus.routes.Ride;
 import com.isima.blablacampus.security.exceptions.AccountActivationException;
 import com.isima.blablacampus.security.exceptions.UserAlreadyExistException;
 import com.isima.blablacampus.security.model.User;
@@ -14,4 +15,6 @@ public interface IUserService {
 	VerificationToken getUserToken(String token) throws AccountActivationException;
 
 	void activateUserAccount(User tokenOwner);
+	
+	void saveUserRide(Ride ride);
 }

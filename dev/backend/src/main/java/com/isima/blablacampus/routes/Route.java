@@ -2,14 +2,17 @@ package com.isima.blablacampus.routes;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name="\"Routes\"")
@@ -17,18 +20,18 @@ public class Route {
 	
 	@Id
 	@Column(name="\"Id\"")
-	@GeneratedValue
-	private int id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
 	
-	@ManyToOne
+	@ManyToOne(cascade= CascadeType.ALL)
 	@JoinColumn(name="\"StartingPoint\"")
 	private Place startingPoint;
 	
-	@ManyToOne
+	@ManyToOne(cascade= CascadeType.ALL)
 	@JoinColumn(name="\"EndPoint\"")
 	private Place endPoint;
 	
-	@OneToMany(mappedBy="route")
+	@OneToMany(mappedBy="route", cascade=CascadeType.ALL)
 	private List<Ride> rides;
 	
 
@@ -37,11 +40,11 @@ public class Route {
 	}
 	
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

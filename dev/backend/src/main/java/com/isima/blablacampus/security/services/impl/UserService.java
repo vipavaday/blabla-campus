@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.isima.blablacampus.routes.Ride;
 import com.isima.blablacampus.security.exceptions.AccountActivationException;
 import com.isima.blablacampus.security.exceptions.UserAlreadyExistException;
 import com.isima.blablacampus.security.model.User;
@@ -86,6 +87,17 @@ public class UserService implements UserDetailsService, IUserService {
 	public void activateUserAccount(User tokenOwner) {
 		
 		userRepository.save(tokenOwner);
+	}
+
+
+
+	@Override
+	public void saveUserRide(Ride ride) {
+		
+		userRepository.
+		findById(ride.getDriver().getUserId()).get().
+		getSubmittedRides().add(ride);
+		
 	}
 
 }

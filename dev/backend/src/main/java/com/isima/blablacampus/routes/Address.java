@@ -13,7 +13,7 @@ public class Address {
 	@Id
 	@GeneratedValue
 	@Column(name = "\"Id\"")
-	private int id;
+	private Integer id;
 	
 	@Column(name = "\"Longitude\"")
 	private double longitude;
@@ -42,7 +42,7 @@ public class Address {
 
 
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
@@ -66,7 +66,7 @@ public class Address {
 
 
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
