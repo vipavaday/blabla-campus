@@ -36,45 +36,6 @@ public class RouteService implements IRouteService{
 	@Override
 	public List<Route> loadUserRoutes(String email) {
 		
-		//Récupérer les itinéraires
-//		List<Route> routes = null;
-//		
-//		if(rides !=null && rides.size() > 0) {
-//			
-//			Iterator<Ride> itRide = rides.iterator();
-//			
-//			routes = new ArrayList<Route>();
-//			
-//			Ride ride = itRide.next();
-//			
-//			Route route = ride.getRoute();
-//			
-//			routes.add(route);
-//			
-//			while(itRide.hasNext()) {
-//				
-//				ride = itRide.next();
-//				
-//				Iterator<Route> itRoute = routes.iterator();
-//				
-//				route = itRoute.next();
-//				
-//				while(ride.getRoute().getId() != route.getId()  && itRoute.hasNext()) {
-//					
-//					route = itRoute.next();
-//					
-//				}
-//				
-//				if(ride.getRoute().getId() != route.getId()) {
-//					
-//					routes.add(ride.getRoute());
-//				}
-//				
-//				
-//			}
-//
-//		}
-		
 		List<Route> routes = routeRepository.findUserRoutes(email);
 		
 		return routes;

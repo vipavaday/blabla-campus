@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.isima.blablacampus.routes.exceptions.PlaceAlreadyExistException;
+
 import com.isima.blablacampus.routes.service.impl.PlaceService;
 import com.isima.blablacampus.routes.service.impl.RideService;
 import com.isima.blablacampus.routes.service.impl.RouteService;
@@ -60,44 +60,6 @@ public class RouteController {
 		
 		boolean saved = true;
 	
-		/*try {
-			
-			placeService.savePlace(route.getStartingPoint());
-			
-			
-		} catch (PlaceAlreadyExistException e) {
-			
-			System.out.println(e.getMessage());
-			
-		}finally {
-			
-			try {
-				
-				placeService.savePlace(route.getEndPoint());
-				
-			} catch (PlaceAlreadyExistException e) {				
-
-				System.out.println(e.getMessage());
-				
-			}finally {
-				
-				//for(Ride ride: route.getRides()) routeService.saveRoute(ride.getRoute());
-				
-				rideService.saveAllRides(route.getRides());
-				
-				routeService.saveRoute(route);
-				
-				
-				
-				saved = true;
-				
-			}
-			
-			
-		}*/
-		
-		
-		
 		routeService.saveRoute(route);
 		
 		return saved;

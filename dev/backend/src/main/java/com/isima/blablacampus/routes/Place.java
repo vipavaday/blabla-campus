@@ -1,5 +1,6 @@
 package com.isima.blablacampus.routes;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,8 +28,8 @@ public class Place {
 	@Column(name = "\"StudyingPlace\"")
 	private boolean studyingPlace;
 	
-	@OneToOne
-	@JoinColumn(name = "\"Id\"")
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "\"AddressId\"")
 	private Address address;
 	
 

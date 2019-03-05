@@ -1,10 +1,14 @@
 package com.isima.blablacampus.routes;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="\"Locations\"")
@@ -22,20 +26,21 @@ public class Address {
 	private double latitude;
 	
 	@Column(name = "\"Address\"")
-	private String Address;
+	private String address;
 	
-	
+	@OneToOne(cascade=CascadeType.ALL, mappedBy="address")
+	private Place place;
 	
 	public Address() {
 	
 	}
 
 
-	public Address(double longitude, double latitude, String Address) {
+	public Address(double longitude, double latitude, String address) {
 		super();
 		this.longitude = longitude;
 		this.latitude = latitude;
-		this.Address = Address;
+		this.address = address;
 	}
 
 
@@ -61,7 +66,7 @@ public class Address {
 
 
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 
 
@@ -85,10 +90,21 @@ public class Address {
 
 
 	public void setLineAddress(String Address) {
-		this.Address = Address;
+		this.address = Address;
+	}
+
+	@JsonIgnore
+	public Place getPlace() {
+		return place;
+	}
+
+
+	public void setPlace(Place place) {
+		this.place = place;
 	}
 	
-
+	
+	
 	
 	
 
