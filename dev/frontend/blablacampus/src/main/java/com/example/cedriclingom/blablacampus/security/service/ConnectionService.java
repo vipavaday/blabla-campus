@@ -4,17 +4,17 @@ package com.example.cedriclingom.blablacampus.security.service;
 
 
 import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
-import com.example.cedriclingom.blablacampus.security.models.UserModel;
-import com.example.cedriclingom.blablacampus.security.utils.HttpClientService;
+import com.example.cedriclingom.blablacampus.security.models.User;
+import com.example.cedriclingom.blablacampus.security.utils.MyHttpClientService;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 
 
 
-public class ConnectionService extends HttpClientService {
+public class ConnectionService extends MyHttpClientService {
 
-    private static  UserModel userInfos = null;
+    private static User userInfos = null;
 
     private static  boolean  connectionStatus = false;
 
@@ -43,7 +43,7 @@ public class ConnectionService extends HttpClientService {
         params.put("username", connectionModel.getEmail());
         params.put("password", connectionModel.getPassword());
 
-        ConnectionService.post(relativeUrl, params ,asyncHttpResponseHandler);
+        post(relativeUrl, params ,asyncHttpResponseHandler);
 
     }
 

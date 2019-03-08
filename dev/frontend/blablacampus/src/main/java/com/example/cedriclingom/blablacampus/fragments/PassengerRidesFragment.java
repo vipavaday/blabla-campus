@@ -32,16 +32,6 @@ public class PassengerRidesFragment extends AuthFragment {
     }
 
 
-    @Override
-    public void onStart(){
-
-        super.onStart();
-
-        /*FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.detach(this).attach(this).commit();
-
-        System.out.println("I can get the Passenger Rides!");*/
-    }
 
     @Override
     public void onResume(){

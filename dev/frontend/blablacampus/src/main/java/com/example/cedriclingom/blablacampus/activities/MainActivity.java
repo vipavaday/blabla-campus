@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private BottomAppBar bottomAppBar;
 
 
-    private static String localMachine ="localhost"; //127.0.0.1 172.20.10.2
+    private static String localMachine ="localhost";
     private static String distantMachine = "51.77.158.156";
 
 
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     public  void showRideCard(View view) {
 
         Intent intent = new Intent(this, PathActivity.class);
+
         startActivity(intent);
 
     }

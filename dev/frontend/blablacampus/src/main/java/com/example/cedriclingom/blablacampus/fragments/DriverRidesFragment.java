@@ -17,8 +17,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class DriverRidesFragment extends AuthFragment {
 
-    private static DriverRidesFragment fragment;
-
 
     public DriverRidesFragment() {
         super();
@@ -34,22 +32,7 @@ public class DriverRidesFragment extends AuthFragment {
     }
 
 
-    @Override
-    public void onStart(){
 
-        super.onStart();
-
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.detach(this).attach(this).commit();
-
-        if(ConnectionService.isConnected()){
-
-
-            System.out.println("I can get the routes!");
-
-        }
-
-    }
 
     @Override
     public void onResume(){

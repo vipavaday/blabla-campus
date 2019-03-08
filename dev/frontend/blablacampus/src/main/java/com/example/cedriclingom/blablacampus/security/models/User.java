@@ -1,6 +1,9 @@
 package com.example.cedriclingom.blablacampus.security.models;
 
-public class UserModel {
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class User {
 
 
     private Integer userId;
@@ -40,7 +43,7 @@ public class UserModel {
 
 
 
-    public UserModel() {
+    public User() {
 
     }
 
@@ -159,6 +162,47 @@ public class UserModel {
         this.authorities = authorities;
     }
 
+
+
+    public void initialiseUser(JSONObject user){
+
+        if(user != null){
+
+            try {
+
+                setUserId(user.getInt("userId"));
+
+                setFirstname(user.getString("firstname"));
+
+                setLastname(user.getString("lastname"));
+
+                setEmail(user.getString("email"));
+
+                setPhone(user.getString("phone"));
+
+                setPicPath(user.getString("picPath"));
+
+                setEnabled(user.getBoolean("enabled"));
+
+                setUsername(user.getString("username"));
+
+                setAuthorities(user.getString("authorities"));
+
+                setAccountNonExpired(user.getBoolean("accountNonExpired"));
+
+                setAccountNonLocked(user.getBoolean("accountNonLocked"));
+
+                setCredentialsNonExpired(user.getBoolean("credentialsNonExpired"));
+
+            } catch (JSONException e) {
+
+                e.printStackTrace();
+
+            }
+
+        }
+
+    }
 
 
 }

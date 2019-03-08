@@ -1,13 +1,11 @@
 package com.example.cedriclingom.blablacampus.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import cz.msebera.android.httpclient.Header;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -16,9 +14,15 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.cedriclingom.blablacampus.R;
+import com.example.cedriclingom.blablacampus.routes.models.Route;
+import com.example.cedriclingom.blablacampus.routes.service.RouteService;
+import com.example.cedriclingom.blablacampus.routes.utils.RideHandler;
 import com.example.cedriclingom.blablacampus.security.models.ConnectionModel;
 import com.example.cedriclingom.blablacampus.security.service.ConnectionService;
+import com.example.cedriclingom.blablacampus.security.service.UserService;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+
+import org.json.JSONException;
 
 public class AuthentificationActivity extends AppCompatActivity {
 
@@ -41,6 +45,20 @@ public class AuthentificationActivity extends AppCompatActivity {
 
         addListenerOnConcetionButton();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /**
@@ -68,6 +86,18 @@ public class AuthentificationActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     private void addListenerOnConcetionButton(){
 
         Button button = (Button) findViewById(R.id.connectionButton);
@@ -90,13 +120,12 @@ public class AuthentificationActivity extends AppCompatActivity {
                         if(statusCode == 200) {
 
 
-                            System.out.println("Request Success with statuscode: "+ statusCode);
+                            System.out.println("Success in connecting with statuscode: "+ statusCode);
 
                             ConnectionService.setConnectionStatus(true);
 
-                            setResult(RESULT_OK);
+                            getUserInformations(connectionModel.getEmail());
 
-                            finish();
                         }
 
                     }
@@ -104,9 +133,12 @@ public class AuthentificationActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 
-                        System.out.println("Request failed with statuscode: "+ statusCode);
+                        System.out.println("Failure in connecting with statuscode: "+ statusCode);
 
                         ConnectionService.setConnectionStatus(false);
+
+                        String response = new String(responseBody);
+
 
                     }
                 });
@@ -115,6 +147,90 @@ public class AuthentificationActivity extends AppCompatActivity {
         });
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private void getUserInformations(String username){
+
+        UserService.getUserInformations(username, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+                System.out.println("Success in getting user information with statuscode: "+ statusCode);
+
+                try {
+
+                    UserService.setUserInfos(responseBody);
+
+                    getUserRoutes(username);
+
+                    setResult(RESULT_OK);
+
+                    finish();
+
+                } catch (JSONException e) {
+
+                    e.printStackTrace();
+
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+                System.out.println("Failure in getting user informationwith statuscode: "+ statusCode);
+
+            }
+        });
+
+    }
+
+
+    private void getUserRoutes(String username){
+
+        RouteService.doGetUserRoutes(username, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+
+
+
+                    System.out.println("The user routes were successfully taken with statusCode: " + statusCode);
+
+                    RouteService.setUserRoutes(responseBody);
+
+                    RideHandler.createRide
+                            (
+                                    "41 Boulevard François Mitterrand, 63002 Clermont-Ferrand",
+                                    "1 Rue de la Chebarde, 63178 Aubière",
+                                    "12 Mai 2019",
+                                    "12 Mai 2019",
+                                    "11",
+                                    "11",
+                                    AuthentificationActivity.this
+                            );
+
+
+
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+            }
+        });
+    }
+
 
 
 
