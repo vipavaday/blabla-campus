@@ -118,9 +118,8 @@ public class RouteService extends MyHttpClientService {
 
         String relativeUrl = "/user/routes";
 
-        RequestParams params = new RequestParams();
-
         StringEntity jsonEntity = null;
+
         ObjectMapper mapper = new ObjectMapper();
 
         if(newRoute != null){
@@ -129,29 +128,30 @@ public class RouteService extends MyHttpClientService {
 
             try {
 
+                    jsonEntity = new StringEntity(mapper.writeValueAsString(newRoute), "UTF-8");
 
-                //jsonParams.put("route",json.toJson(newRoute));
+            } catch (JsonProcessingException e) {
 
-                    jsonEntity = new StringEntity(mapper.writeValueAsString(newRoute));
-
-            } catch (JsonProcessingException |UnsupportedEncodingException e) {
                 e.printStackTrace();
+
             }
 
-        }/*else if(modifiedRoute != null) {
+        }else if(modifiedRoute != null) {
 
             //send a put request
 
             try {
-                jsonParams.put("route",json.toJson(newRoute));
 
-                jsonEntity = new StringEntity(jsonParams.toString());
-            } catch (JSONException |UnsupportedEncodingException e) {
+                jsonEntity = new StringEntity(mapper.writeValueAsString(modifiedRoute), "UTF-8");
+
+            } catch (JsonProcessingException e) {
+
                 e.printStackTrace();
+
             }
 
 
-        }*/
+        }
 
         postEntity(context, relativeUrl, jsonEntity ,asyncHttpResponseHandler);
 

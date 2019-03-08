@@ -59,10 +59,9 @@ public class MyHttpClientService {
     }
     public static void postEntity(Context context, String url, StringEntity stringEntity, AsyncHttpResponseHandler responseHandler) {
 
-        //client.post(getAbsoluteUrl(url), params, responseHandler);
-
 
         client.post(context, getAbsoluteUrl(url),stringEntity, "application/json", responseHandler);
+
     }
 
     public static void put(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
@@ -77,11 +76,6 @@ public class MyHttpClientService {
 
     }
 
-   /* public void initialiseCookieStore(){
-
-        myCookieStore = new PersistentCookieStore(this);
-        client.setCookieStore(myCookieStore);
-    }*/
 
 
 }

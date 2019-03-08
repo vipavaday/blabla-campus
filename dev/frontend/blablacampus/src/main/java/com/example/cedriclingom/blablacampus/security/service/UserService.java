@@ -95,8 +95,6 @@ public class UserService extends MyHttpClientService {
 
             userInfos.setUsername(response.getString("username"));
 
-            userInfos.setAuthorities(response.getString("authorities"));
-
             userInfos.setAccountNonLocked(Boolean.valueOf(response.getString("accountNonExpired")));
 
             userInfos.setAccountNonLocked(Boolean.valueOf(response.getString("accountNonLocked")));

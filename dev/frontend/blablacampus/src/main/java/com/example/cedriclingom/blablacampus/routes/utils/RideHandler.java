@@ -275,7 +275,6 @@ public class RideHandler {
 
                 System.out.println("Failed in creating or modifying the route with status code: " + statusCode);
 
-                System.out.println(error.getMessage());
 
             }
         });

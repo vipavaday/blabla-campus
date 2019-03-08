@@ -203,8 +203,6 @@ public class AuthentificationActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 
-
-
                     System.out.println("The user routes were successfully taken with statusCode: " + statusCode);
 
                     RouteService.setUserRoutes(responseBody);

@@ -22,8 +22,6 @@ public class User {
 
     private String username;
 
-    private String authorities;
-
     private boolean accountNonExpired;
 
     private boolean nonlocked;
@@ -154,14 +152,6 @@ public class User {
         this.active = enabled;
     }
 
-    public String getAuthorities() {
-        return authorities;
-    }
-
-    public void setAuthorities(String authorities) {
-        this.authorities = authorities;
-    }
-
 
 
     public void initialiseUser(JSONObject user){
@@ -185,8 +175,6 @@ public class User {
                 setEnabled(user.getBoolean("enabled"));
 
                 setUsername(user.getString("username"));
-
-                setAuthorities(user.getString("authorities"));
 
                 setAccountNonExpired(user.getBoolean("accountNonExpired"));
 
