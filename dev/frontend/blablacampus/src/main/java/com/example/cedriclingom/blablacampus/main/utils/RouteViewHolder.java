@@ -4,8 +4,6 @@ import android.widget.TextView;
 
 import com.example.cedriclingom.blablacampus.R;
 
-import java.util.List;
-
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,12 +14,12 @@ public class RouteViewHolder extends RecyclerView.ViewHolder {
     private TextView duration;
     private ConstraintLayout activeDays;
 
-    public RouteViewHolder(ConstraintLayout v) {
+    RouteViewHolder(ConstraintLayout v) {
         super(v);
 
         layout = v;
         route = v.findViewById(R.id.route_tx);
-        duration = v.findViewById(R.id.duration_tx);
+        duration = v.findViewById(R.id.avg_duration_nb_tx);
         activeDays = v.findViewById(R.id.active_days);
     }
 
@@ -33,11 +31,11 @@ public class RouteViewHolder extends RecyclerView.ViewHolder {
         this.layout = layout;
     }
 
-    public TextView getRoute() {
+    TextView getRoute() {
         return route;
     }
 
-    public TextView getDuration() {
+    TextView getDuration() {
         return duration;
     }
 }
